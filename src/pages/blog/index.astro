@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { load } from '../../lib/data';
+
+const site = load('site.yaml');
+const posts = (await getCollection('blog'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title={`Blog | ${site.name}`} description="Blog yazıları">
+  <main class="max-w-[720px] mx-auto px-6 py-20">
+    <h1 class="font-display text-[40px] font-bold text-ink mb-2">Blog</h1>
+    <p class="text-ink-secondary mb-12">iOS geliştirme, BIM ve teknoloji üzerine yazılar.</p>
+
+    <div class="space-y-8">
+      {posts.map(post => (
+        <a href={`/blog/${post.slug}`} class="block group">
+          <div class="bg-surface-raised rounded-[12px] p-6 border border-border hover:border-accent transition-colors">
+            <div class="flex items-center gap-2 mb-3">
+              <time class="text-[13px] font-mono text-ink-tertiary">
+                {post.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+              {post.data.tags?.map(tag => (
+                <span class="text-[11px] font-mono bg-accent-wash text-accent px-2 py-0.5 rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <h2 class="font-display text-[20px] font-bold text-ink mb-2 group-hover:text-accent transition-colors">
+              {post.data.title}
+            </h2>
+            <p class="text-ink-secondary text-[15px] leading-relaxed">
+              {post.data.description}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

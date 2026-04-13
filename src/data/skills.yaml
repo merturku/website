@@ -1,47 +1,47 @@
-label: "04 // SKILLS"
-heading: "Technical Taxonomy"
+label: "04 // BECERİLER"
+heading: "Teknoloji Yığını"
 
 categories:
-  - name: "Languages"
+  - name: "iOS Geliştirme"
     icon: "lzgmgrnn"
     items:
-      - JavaScript
-      - TypeScript
-      - Python
-      - SQL
-      - HTML
-      - CSS
-      - Bash
+      - SwiftUI
+      - Swift
+      - SwiftData
+      - StoreKit 2
+      - CoreLocation
+      - MapKit
+      - ARKit
+      - MVVM
 
-  - name: "Frameworks & Libraries"
+  - name: "Araçlar & Platform"
     icon: "gvtjlyjf"
     items:
-      - React
-      - Next.js
-      - Astro
-      - Svelte
-      - Node.js
-      - Express
-      - Django
-      - Tailwind CSS
+      - Xcode
+      - Git
+      - GitHub
+      - Vercel
+      - Figma
+      - TestFlight
+      - App Store Connect
 
-  - name: "DevOps & Cloud"
+  - name: "BIM & İnşaat"
     icon: "kikjlzqr"
     items:
-      - Docker
-      - AWS
-      - Vercel
-      - Cloudflare
-      - GitHub Actions
-      - Terraform
-      - Linux
+      - Revit
+      - AutoCAD
+      - Navisworks
+      - BIM 360
+      - MS Project
+      - Tekla
+      - Dynamo
 
-  - name: "Databases & Tools"
+  - name: "Web & Diğer"
     icon: "xqdfobxg"
     items:
-      - PostgreSQL
-      - Redis
-      - MongoDB
-      - SQLite
-      - Git
-      - Figma
+      - Astro
+      - Tailwind CSS
+      - TypeScript
+      - HTML
+      - CSS
+      - YAML

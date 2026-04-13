@@ -1,110 +1,111 @@
-label: "03 // PROJECTS"
-heading: "Engineering Artifacts"
+label: "03 // PROJELER"
+heading: "Uygulamalarım"
 
 statuses:
-  - label: "All"
-  - label: "Live"
+  - label: "Tümü"
+  - label: "Yayında"
     color: "#2D8A56"
-  - label: "Open Source"
+  - label: "Geliştiriliyor"
     color: "#2E5090"
-  - label: "Archived"
+  - label: "Arşiv"
     color: "#6B7280"
 
 items:
-  - title: "TaskFlow"
-    subtitle: "Team project management reimagined"
-    description: "A modern project management tool with real-time collaboration, Kanban boards, and AI-powered task prioritization. Built for small teams who want simplicity without sacrificing power."
+  - title: "Lilio"
+    subtitle: "Bebek takip uygulaması"
+    description: "Ebeveynler için tasarlanmış kapsamlı bebek takip uygulaması. Beslenme, uyku, bez ve büyüme takibi. Tam Türkçe ve İngilizce desteği ile iOS 17+ için SwiftUI ile geliştirildi."
     icon: "lvrxlmju"
-    status: "Live"
+    status: "Yayında"
     featured: true
     links:
-      - url: "https://example.com/taskflow"
+      - url: "https://apps.apple.com"
         icon: "tvzjrcxe"
-        label: "Website"
-      - url: "https://github.com/janesmith/taskflow"
-        icon: "jjxzcivr"
-        label: "GitHub"
+        label: "App Store"
     tech:
-      - Next.js
-      - React
-      - Supabase
-      - Tailwind CSS
-      - Stripe
+      - SwiftUI
+      - SwiftData
+      - MVVM
+      - iOS 17+
+      - StoreKit 2
 
-  - title: "DevMetrics"
-    subtitle: "Engineering team analytics dashboard"
-    description: "Dashboard that aggregates data from GitHub, Jira, and Slack to give engineering leaders visibility into team velocity, code review bottlenecks, and deployment frequency."
+  - title: "Hidayet"
+    subtitle: "İslami yaşam asistanı"
+    description: "Namaz vakitleri, Kuran ve hadis, alışkanlık takibi, günlük, kıble pusulası ve tesbih sayacı içeren kapsamlı İslami yaşam uygulaması. Glassmorphic tasarım ve offline-first mimari."
     icon: "oqhqyeud"
-    status: "Live"
+    status: "Yayında"
     featured: true
     links:
-      - url: "https://example.com/devmetrics"
+      - url: "https://apps.apple.com"
         icon: "tvzjrcxe"
-        label: "Website"
+        label: "App Store"
     tech:
-      - TypeScript
-      - React
-      - D3.js
-      - Node.js
-      - PostgreSQL
+      - SwiftUI
+      - SwiftData
+      - iOS 17.6+
+      - CoreLocation
+      - StoreKit 2
 
-  - title: "FormKit"
-    subtitle: "Headless form builder library"
-    description: "Open-source React library for building complex, multi-step forms with validation, conditional logic, and accessibility built in. 500+ GitHub stars."
+  - title: "GPS Tracker "
+    subtitle: "Aile konum takip uygulaması"
+    description: "Ebeveynlerin çocuklarını ve aile üyelerini güvenle takip etmesini sağlayan konum takip uygulaması. Gerçek zamanlı konum paylaşımı ve güvenli bölge bildirimleri."
     icon: "exymduqj"
-    status: "Open Source"
+    status: "Yayında"
     featured: true
     links:
-      - url: "https://github.com/janesmith/formkit"
-        icon: "jjxzcivr"
-        label: "GitHub"
-    tech:
-      - TypeScript
-      - React
-      - Zod
-      - Vitest
-
-  - title: "WeatherNow"
-    subtitle: "Minimal weather app with forecasts"
-    description: "Clean, fast weather app using OpenWeatherMap API. Features location search, 7-day forecasts, and beautiful weather animations. PWA with offline support."
-    icon: "btvefodi"
-    status: "Live"
-    featured: true
-    links:
-      - url: "https://example.com/weathernow"
+      - url: "https://apps.apple.com"
         icon: "tvzjrcxe"
-        label: "Website"
+        label: "App Store"
     tech:
-      - Svelte
-      - TypeScript
-      - Cloudflare Workers
+      - SwiftUI
+      - CoreLocation
+      - MapKit
+      - iOS 17+
+      - StoreKit 2
 
-  - title: "MarkdownBlog"
-    subtitle: "Static blog engine"
-    description: "Minimal static blog generator powered by Astro and Markdown. Features syntax highlighting, RSS feed, and automatic OG image generation."
+  - title: "Ledgerly"
+    subtitle: "Kişisel finans takip uygulaması"
+    description: "Türk kullanıcılar için tasarlanmış kişisel finans uygulaması. Gelir/gider takibi, borç ve varlık yönetimi. Türk Lirası desteği ve freemium monetizasyon modeli."
+    icon: "btvefodi"
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://apps.apple.com"
+        icon: "tvzjrcxe"
+        label: "App Store"
+    tech:
+      - SwiftUI
+      - SwiftData
+      - StoreKit 2
+      - iOS 17+
+      - Turkish L10n
+
+  - title: "BabyNamer"
+    subtitle: "İsim bulma uygulaması"
+    description: "Ebeveynlerin bebeklerine isim bulmasına yardımcı olan uygulama. Kültürel ve anlamsal filtreleme özellikleri ile Türkçe isim veritabanı."
     icon: "fikcyfpp"
-    status: "Open Source"
+    status: "Yayında"
     featured: false
     links:
-      - url: "https://github.com/janesmith/markdown-blog"
+      - url: "https://apps.apple.com"
+        icon: "tvzjrcxe"
+        label: "App Store"
+    tech:
+      - SwiftUI
+      - SwiftData
+      - iOS 17+
+
+  - title: "Şems - Sun Tracker"
+    subtitle: "Güneş takip ve AR uygulaması"
+    description: "Uydu harita görselleştirmesi, AR modu ve astronomik hesaplamalar içeren güneş takip uygulaması. Türk pazarı için özel olarak tasarlandı."
+    icon: "wsaaegar"
+    status: "Geliştiriliyor"
+    featured: false
+    links:
+      - url: "https://github.com/merturku"
         icon: "jjxzcivr"
         label: "GitHub"
     tech:
-      - Astro
-      - TypeScript
-      - MDX
-
-  - title: "PixelArt"
-    subtitle: "Browser-based pixel art editor"
-    description: "Fun weekend project. Draw pixel art in the browser with layers, animation timeline, and export to PNG/GIF. Built to learn Canvas API."
-    icon: "wsaaegar"
-    status: "Archived"
-    featured: false
-    links:
-      - url: "https://example.com/pixelart"
-        icon: "osnhctwl"
-        label: "Website"
-    tech:
-      - HTML Canvas
-      - JavaScript
-      - CSS
+      - SwiftUI
+      - ARKit
+      - CoreLocation
+      - iOS 17+

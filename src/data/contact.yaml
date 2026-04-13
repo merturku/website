@@ -1,14 +1,9 @@
-label: "06 // GET IN TOUCH"
-heading: "Let's build something together."
-description: "I'm open to full-time roles, freelance projects, and interesting conversations about web development, open source, or new ideas."
+label: "06 // İLETİŞİM"
+heading: "Birlikte bir şeyler üretelim."
+description: "iOS geliştirme projeleri, BIM danışmanlığı veya uygulama fikirleri hakkında konuşmaya her zaman açığım."
 emailIcon: "ozlkyfxg"
 
-# cta:
-#   - label: "Book a Call"
-#     href: "https://calendly.com/yourusername/30min"
-#     icon: "gxexvjie"
-
 footer:
-  copyright: '2026 Jane Smith. Built with <a href="https://astro.build" target="_blank" rel="noopener" class="text-ink-tertiary hover:text-accent transition-colors no-underline dark:text-ink-tertiary">Astro</a>.'
+  copyright: '2026 Mehmet Ertürk Uludaşdemir. <a href="https://astro.build" target="_blank" rel="noopener" class="text-ink-tertiary hover:text-accent transition-colors no-underline dark:text-ink-tertiary">Astro</a> ile geliştirildi.'
   iconsAttribution: "Lordicon"
   iconsUrl: "https://lordicon.com/"

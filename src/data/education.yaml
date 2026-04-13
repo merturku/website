@@ -1,20 +1,20 @@
-label: "05 // EDUCATION"
-heading: "Academic Foundation"
+label: "05 // EĞİTİM"
+heading: "Akademik Geçmiş"
 
-degree: "B.S. Computer Science"
-institution: "University of California, Berkeley"
-dateRange: "2014 &ndash; 2018"
+degree: "Bilgisayar Mühendisliği"
+institution: "Üniversite"
+dateRange: "2010 &ndash; 2015"
 
 highlights:
-  - text: "Dean's List (6 semesters)"
+  - text: "BIM Uzmanlık Sertifikası - Autodesk"
     icon: "lewtedlh"
     featured: true
-  - text: "CS Club President"
+  - text: "iOS Geliştirme "
     icon: "zpxybbhl"
-    featured: false
-  - text: "Undergraduate Research Assistant"
+    featured: true
+  - text: "Revit MEP Eğitimi"
     icon: "qhgmphtg"
     featured: false
-  - text: "TA: Intro to Algorithms"
+  - text: "Şantiye Yönetimi Sertifikası"
     icon: "rrbmabsx"
     featured: false

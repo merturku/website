@@ -1,43 +1,28 @@
-label: "02 // EXPERIENCE"
-heading: "Professional Trajectory"
+label: "02 // DENEYİM"
+heading: "Profesyonel Yolculuk"
 
 jobs:
-  - company: "Acme Corp"
-    url: "https://example.com"
-    role: "Senior Frontend Engineer"
-    location: "San Francisco, CA"
-    dateRange: "Jan 2022 &ndash; Present"
-    description: "Leading the frontend platform team. Built the design system used across 12 product teams. Migrated legacy jQuery app to React, improving performance by 40%. Mentoring junior engineers and driving technical standards."
+  - company: "Serbest / Bağımsız"
+    role: "iOS Developer"
+    location: "Ankara, Türkiye"
+    dateRange: "2023 &ndash; Devam ediyor"
+    description: "SwiftUI ve SwiftData kullanarak App Store'da yayınlanan mobil uygulamalar geliştiriyorum. Lilio (bebek takip), GPS Tracker (konum takip), Hidayet (İshanselami yaşam asistanı) ve Ledgerly (kişisel finans) uygulamalarını tasarlayıp geliştirdim. Freemium monetizasyon modelleri ve StoreKit 2 entegrasyonları uyguladım."
     tech:
-      - React
-      - TypeScript
-      - Next.js
-      - GraphQL
-      - Storybook
-      - Playwright
+      - SwiftUI
+      - SwiftData
+      - StoreKit 2
+      - iOS 17+
+      - Xcode
+      - MVVM
 
-  - company: "StartupXYZ"
-    role: "Fullstack Engineer"
-    location: "Remote"
-    dateRange: "Mar 2020 &ndash; Dec 2021"
-    description: "Employee #5. Built the core SaaS product from MVP to 10K users. Owned the entire auth system, billing integration (Stripe), and real-time notifications pipeline. Shipped features weekly in a fast-paced startup environment."
+  - company: "İnşaat Sektörü"
+    role: "BIM Uzmanı & Şantiye Yöneticisi"
+    location: "Ankara, Türkiye"
+    dateRange: "2015 &ndash; Devam ediyor"
+    description: "Büyük ölçekli inşaat projelerinde BIM (Building Information Modeling) uzmanı ve şantiye yöneticisi olarak görev yapıyorum. Revit MEP ile mekanik, elektrik ve tesisat projelerini koordine ediyorum. Dijital dönüşüm süreçlerinde teknik liderlik üstlendim."
     tech:
-      - Node.js
-      - React
-      - PostgreSQL
-      - Redis
-      - AWS
-      - Docker
-
-  - company: "TechAgency Inc"
-    role: "Junior Developer"
-    location: "New York, NY"
-    dateRange: "Jun 2018 &ndash; Feb 2020"
-    description: "Built client websites and web applications for Fortune 500 companies. Worked on e-commerce platforms handling $2M+ in monthly transactions. Introduced automated testing that reduced production bugs by 60%."
-    tech:
-      - JavaScript
-      - Vue.js
-      - Python
-      - Django
-      - MySQL
-      - AWS
+      - Revit
+      - AutoCAD
+      - BIM 360
+      - Navisworks
+      - MS Project

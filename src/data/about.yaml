@@ -1,18 +1,18 @@
-label: "01 // ABOUT"
-heading: "Building things for the web"
+label: "01 // HAKKIMDA"
+heading: "İnşaat ve yazılım dünyasını birleştiriyorum"
 
 paragraphs:
-  - 'I''m a software engineer based in <strong class="text-ink">San Francisco, CA</strong> with 5+ years of experience building web applications. I enjoy working across the stack &mdash; from pixel-perfect frontends to robust backend services.'
-  - 'Previously, I worked at <strong class="text-ink">Acme Corp</strong> leading their frontend platform team, and before that at <strong class="text-ink">StartupXYZ</strong> building their core product from scratch.'
-  - 'I write about web development on my <a href="https://blog.example.com" target="_blank" rel="noopener" class="font-medium">blog</a> and contribute to open-source projects in the React and Node.js ecosystems.'
+  - 'iOS Developer ve BIM Uzmanı olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. SwiftUI ile modern mobil uygulamalar geliştirirken inşaat sektöründeki teknik birikimimi yazılım projelerime yansıtıyorum.'
+  - 'Geliştirdiğim uygulamalar arasında bebek takip uygulaması <strong class="text-ink">Lilio</strong>, konum takip uygulaması <strong class="text-ink">GPS Tracker  </strong>, İslami yaşam asistanı <strong class="text-ink">Hidayet</strong> ve kişisel finans uygulaması <strong class="text-ink">Ledgerly</strong> yer alıyor.'
+  - 'iOS geliştirme deneyimlerimi <a href="/blog" class="font-medium">blogumda</a> paylaşıyor, Türkçe konuşan geliştirici topluluğuna katkı sağlamaya çalışıyorum.'
 
 stats:
-  - value: "5+"
-    label: "Years of Experience"
+  - value: "4+"
+    label: "Yayınlanan Uygulama"
     icon: "kbtmbyzy"
-  - value: "20+"
-    label: "Projects Shipped"
+  - value: "iOS"
+    label: "SwiftUI & SwiftData"
     icon: "vbmtnozn"
-  - value: "OSS"
-    label: "Open Source Contributor"
+  - value: "BIM"
+    label: "İnşaat Teknolojileri"
     icon: "yvjimpju"

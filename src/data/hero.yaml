@@ -1,14 +1,14 @@
-subtitle: "SOFTWARE ENGINEER"
-name: "JANE SMITH"
+subtitle: "iOS DEVELOPER & BIM EXPERT"
+name: "MEHMET ERTÜRK"
 icon: "srupsmbe"
-description: "I build modern web applications, design scalable APIs, and ship products users love. 5+ years across frontend, backend, and cloud infrastructure."
+description: "SwiftUI ile modern iOS uygulamaları geliştiriyorum. İnşaat sektöründeki BIM uzmanlığımı yazılım dünyasıyla birleştirerek kullanıcı odaklı ürünler üretiyorum."
 
 cta:
   viewWork:
-    label: "View Work"
+    label: "Projelerimi Gör"
     href: "#experience"
     icon: "zhiiqoue"
   getInTouch:
-    label: "Get in Touch"
+    label: "İletişime Geç"
     href: "#contact"
     icon: "vcdutftw"
