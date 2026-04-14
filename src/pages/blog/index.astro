@@ -16,7 +16,7 @@ const posts = (await getCollection('blog'))
 
     <div class="space-y-8">
       {posts.map(post => (
-        <a href={`/blog/${post.slug}`} class="block group">
+        <a href={`/blog/${post.id}`} class="block group">
           <div class="bg-surface-raised rounded-[12px] p-6 border border-border hover:border-accent transition-colors">
             <div class="flex items-center gap-2 mb-3">
               <time class="text-[13px] font-mono text-ink-tertiary">
