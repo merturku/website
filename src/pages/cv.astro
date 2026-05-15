@@ -1,0 +1,106 @@
+---
+import { load } from "../lib/data";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from '../components/Navbar.astro';
+
+const site = load("site.yaml");
+---
+
+<BaseLayout title={`Resume | ${site.name}`} description="CV ve özgeçmiş dosyalarım.">
+  <Navbar />
+
+  <section class="px-5 md:px-6 pt-20 pb-12 md:pb-16 bg-surface">
+    <div class="max-w-[780px] mx-auto md:mx-0 md:ml-[max(calc((100%-1100px)/2),2rem)]">
+      <p class="text-[13px] md:text-[15px] font-mono text-accent tracking-[0.12em] uppercase mb-4 md:mb-5">Özgeçmiş</p>
+      <h1 class="font-display text-[42px] sm:text-[52px] md:text-[76px] lg:text-[90px] font-bold text-ink leading-[1.05] tracking-[-0.02em] mb-5 md:mb-7">Resume</h1>
+      <p class="text-[17px] md:text-[20px] text-ink-secondary leading-[1.7] max-w-[580px]">Güncel CV'mi Türkçe ve İngilizce olarak inceleyebilir veya indirebilirsiniz.</p>
+    </div>
+  </section>
+
+  <main class="max-w-[1100px] mx-auto px-6 pb-20">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+      <div class="flex gap-2" id="lang-tabs">
+        <button
+          data-lang="tr"
+          class="lang-btn active px-5 py-2 rounded-full text-[13px] font-mono font-medium border border-accent bg-accent text-white transition-all"
+        >
+          Türkçe
+        </button>
+        <button
+          data-lang="en"
+          class="lang-btn px-5 py-2 rounded-full text-[13px] font-mono font-medium border border-border text-ink-secondary hover:border-accent hover:text-accent transition-all"
+        >
+          English
+        </button>
+      </div>
+
+      <div class="flex gap-3" id="download-links">
+        <a
+          id="download-pdf"
+          href="/cv/Mehmet Ertürk Uludaşdemir - CV TR.pdf"
+          download
+          class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-accent text-white text-[13px] font-mono font-medium hover:opacity-90 transition-all"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          PDF İndir
+        </a>
+        <a
+          id="open-new-tab"
+          href="/cv/cv-tr.html"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-border text-ink-secondary text-[13px] font-mono font-medium hover:border-accent hover:text-accent transition-all"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Yeni Sekme
+        </a>
+      </div>
+    </div>
+
+    <div class="rounded-[16px] overflow-hidden border border-border shadow-sm">
+      <iframe
+        id="cv-frame"
+        src="/cv/cv-tr.html"
+        class="w-full border-0"
+        style="height: 85vh; min-height: 600px;"
+        title="CV Önizleme"
+      ></iframe>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  const trPdf = '/cv/Mehmet Ertürk Uludaşdemir - CV TR.pdf';
+  const enPdf = '/cv/Mehmet Ertürk Uludaşdemir - CV EN.pdf';
+  const trHtml = '/cv/cv-tr.html';
+  const enHtml = '/cv/cv-en.html';
+
+  const frame = document.getElementById('cv-frame') as HTMLIFrameElement;
+  const downloadBtn = document.getElementById('download-pdf') as HTMLAnchorElement;
+  const openBtn = document.getElementById('open-new-tab') as HTMLAnchorElement;
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.lang-btn');
+
+  let currentLang = 'tr';
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentLang = btn.dataset.lang!;
+      const isTr = currentLang === 'tr';
+
+      frame.src = isTr ? trHtml : enHtml;
+      downloadBtn.href = isTr ? trPdf : enPdf;
+      downloadBtn.textContent = isTr ? '⬇ PDF İndir' : '⬇ Download PDF';
+      openBtn.href = isTr ? trHtml : enHtml;
+      openBtn.textContent = isTr ? '↗ Yeni Sekme' : '↗ New Tab';
+
+      buttons.forEach(b => {
+        const active = b.dataset.lang === currentLang;
+        b.classList.toggle('bg-accent', active);
+        b.classList.toggle('text-white', active);
+        b.classList.toggle('border-accent', active);
+        b.classList.toggle('active', active);
+        b.classList.toggle('text-ink-secondary', !active);
+        b.classList.toggle('border-border', !active);
+      });
+    });
+  });
+</script>

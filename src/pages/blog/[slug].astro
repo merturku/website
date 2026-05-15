@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
 import { load } from '../../lib/data';
 
 export async function getStaticPaths() {
@@ -22,6 +23,7 @@ const postUrl = `https://merturku.com/blog/${post.id}`;
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
+  <Navbar />
   <main class="max-w-[720px] mx-auto px-6 py-20">
 
     <a href="/blog" class="text-[13px] font-mono text-ink-tertiary hover:text-accent transition-colors mb-10 block">

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CV — Mehmet Ertürk Uludaşdemir (EN)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf7f1; --paper: #ffffff;
+    --ink: #1a1815; --ink-2: #4a4640; --ink-3: #8a847a;
+    --rule: #e6e0d4; --accent: oklch(0.55 0.14 38); --accent-soft: oklch(0.92 0.04 60);
+    --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 13.5px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  .toolbar { position: sticky; top: 16px; z-index: 5; display: flex; justify-content: flex-end; gap: 8px; max-width: 980px; margin: 16px auto -32px; padding: 0 24px; }
+  .toolbar button, .toolbar a { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; padding: 8px 12px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); cursor: pointer; border-radius: 2px; text-decoration: none; display: inline-block; }
+  .toolbar button:hover, .toolbar a:hover { color: var(--accent); border-color: var(--accent); }
+  .toolbar .active { color: var(--accent); border-color: var(--accent); }
+  .page-wrap { display: flex; justify-content: center; padding: 48px 24px 96px; }
+  .page { width: 100%; max-width: 980px; background: var(--paper); box-shadow: 0 1px 0 var(--rule), 0 30px 60px -30px rgba(40,30,15,.18); padding: 56px 64px 64px; }
+  .rail { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--rule); padding-bottom: 10px; margin-bottom: 32px; }
+  .rail .dot { color: var(--accent); }
+  header.cv-head { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: end; margin-bottom: 36px; }
+  .name { font-family: var(--serif); font-weight: 500; font-size: 60px; line-height: 0.98; letter-spacing: -0.02em; margin: 0 0 14px; text-wrap: balance; }
+  .name em { font-style: italic; font-weight: 400; color: var(--accent); }
+  .role { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+  .role .sep { color: var(--ink-3); margin: 0 8px; }
+  .contact { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 5px; font-size: 12.5px; align-content: end; }
+  .contact dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); padding-top: 2px; }
+  .contact dd { margin: 0; }
+  .contact a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .contact a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+  section.cv-section { border-top: 1px solid var(--rule); padding-top: 20px; margin-top: 22px; display: grid; grid-template-columns: 160px 1fr; gap: 28px; }
+  section.cv-section:first-of-type { margin-top: 0; }
+  .section-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-2); padding-top: 4px; }
+  .section-label .sub { display: block; color: var(--ink-3); margin-top: 4px; font-weight: 400; }
+  .profile p { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.5; text-wrap: pretty; }
+  .entry { display: grid; grid-template-columns: 130px 1fr; gap: 22px; padding: 12px 0 16px; border-bottom: 1px dashed var(--rule); }
+  .entry:last-child { border-bottom: none; padding-bottom: 0; }
+  .entry .when { font-family: var(--mono); font-size: 11px; color: var(--ink-3); padding-top: 4px; }
+  .entry .when .where { display: block; margin-top: 6px; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.1em; font-size: 9.5px; }
+  .entry h3 { font-family: var(--serif); font-weight: 500; font-size: 21px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -0.005em; }
+  .entry h3 .org { color: var(--ink-3); font-style: italic; font-weight: 400; }
+  .proj { border-left: 2px solid var(--rule); padding: 2px 0 6px 12px; margin: 8px 0; }
+  .proj:hover { border-left-color: var(--accent); }
+  .proj .ptitle { font-family: var(--serif); font-size: 15px; font-weight: 500; line-height: 1.3; }
+  .proj .pmeta { font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--ink-3); text-transform: uppercase; display: block; margin-top: 2px; }
+  .proj ul { margin: 6px 0 0; padding-left: 16px; }
+  .proj li { font-size: 13px; line-height: 1.55; color: var(--ink-2); margin-bottom: 2px; }
+  .proj li::marker { color: var(--accent); }
+  .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 32px; }
+  .skill-block h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; margin: 0 0 8px; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
+  .skill-block h4::before { content: ""; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+  .skill-block p { margin: 0; font-size: 13px; line-height: 1.55; }
+  .lang-row { display: grid; grid-template-columns: 90px 1fr auto; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .lang-row .name-l { font-family: var(--serif); font-size: 16px; font-weight: 500; }
+  .lang-row .meter { height: 4px; background: var(--accent-soft); border-radius: 2px; overflow: hidden; position: relative; }
+  .lang-row .meter::after { content: ""; position: absolute; inset: 0; width: var(--lvl, 50%); background: var(--accent); }
+  .lang-row .level { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; list-style: none; padding: 0; margin: 0; }
+  .cert-grid li { font-size: 13px; color: var(--ink-2); padding: 4px 0; border-bottom: 1px dotted var(--rule); }
+  .ref-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .ref-card { border: 1px solid var(--rule); padding: 14px; }
+  .ref-card .rname { font-family: var(--serif); font-size: 15px; font-weight: 500; }
+  .ref-card .rtitle { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-top: 2px; }
+  .ref-card .rphone { font-family: var(--mono); font-size: 12px; margin-top: 6px; }
+  footer.cv-foot { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  footer.cv-foot .mark { color: var(--accent); }
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    body { background: white; }
+    .page-wrap { padding: 0; }
+    .page { box-shadow: none; padding: 0; max-width: none; }
+    .toolbar { display: none; }
+    .entry { break-inside: avoid; }
+    .proj { break-inside: avoid; }
+    section.cv-section { break-inside: avoid; }
+    .entry h3 { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a href="CV-TR.html">TR</a>
+  <a href="CV-EN.html" class="active">EN</a>
+  <button onclick="window.print()">Print</button>
+  <button onclick="downloadDocx()">Download .docx</button>
+</div>
+<div class="page-wrap">
+  <article class="page" data-screen-label="CV-EN">
+    <div class="rail"><span>Curriculum Vitæ <span class="dot">●</span> Özgeçmiş</span><span>May 2026 · English</span></div>
+
+    <header class="cv-head">
+      <div>
+        <h1 class="name">Mehmet Ertürk<br><em>Uludaşdemir</em></h1>
+        <div class="role"><span>BIM MECHANICAL INSTALLATION DESIGN SPECIALIST</span><span class="sep"></span><span></span></div>
+      </div>
+      <dl class="contact">
+        <dt>Email</dt><dd><a href="mailto:erturkuludasdemir@gmail.com">erturkuludasdemir@gmail.com</a></dd>
+        <dt>Phone</dt><dd>+90 539 292 28 93</dd>
+        <dt>Web</dt><dd><a href="https://merturku.com">merturku.com</a></dd>
+        <dt>Location</dt><dd>Etimesgut / Ankara, Türkiye</dd>
+      </dl>
+    </header>
+
+    <section class="cv-section">
+      <div class="section-label">01 — Objective<span class="sub">Professional Summary</span></div>
+      <div class="profile">
+        <p>With over 18 years of experience in mechanical installation and BIM, I have successfully managed technical office and site operations across diverse project types and scales — including shopping centres, airports, residential towers, and public buildings. I have taken an active role in establishing in-house BIM workflows, fully parametric 3D modelling of projects, and ensuring interdisciplinary coordination. I have extensive hands-on experience in model development from LOD 300 to LOD 450, clash detection, progress payment attachments, and As-Built deliverables. I am highly proficient in Revit MEP, Navisworks, AutoCAD, and SolidWorks. My goal is to further develop my expertise in BIM coordination and continue delivering sustainable, efficient solutions on large-scale projects.</p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">02 — Experience<span class="sub">Work History</span></div>
+      <div>
+
+        <div class="entry">
+          <div class="when">2023 — Present<br><span class="where">Ankara</span></div>
+          <div>
+            <h3>Mechanical Section Chief <span class="org">· Güryapı</span></h3>
+            <div class="proj">
+              <span class="ptitle">Saraçoğlu Neighbourhood</span>
+              <span class="pmeta">Ankara · 125,000 m² · 2023</span>
+              <ul>
+                <li>Field fabrication coordination</li>
+                <li>Progress-payment attachments &amp; As-Built</li>
+                <li>Testing &amp; commissioning</li>
+              </ul>
+            </div>
+            <div class="proj">
+              <span class="ptitle">Abidin Pasha Mansion — War of Independence Museum</span>
+              <span class="pmeta">Ankara · 2,000 m² · 2024</span>
+              <ul>
+                <li>Material take-off &amp; site coordination</li>
+                <li>Progress-payment attachments &amp; As-Built</li>
+                <li>Testing &amp; commissioning</li>
+              </ul>
+            </div>
+            <div class="proj">
+              <span class="ptitle">AOÇ Beştepe National Garden</span>
+              <span class="pmeta">Ankara · 450,000 m² · 2026</span>
+              <ul>
+                <li>Field fabrication coordination</li>
+                <li>Progress-payment attachments &amp; As-Built</li>
+                <li>Testing &amp; commissioning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2019 — Present<br><span class="where">Ankara</span></div>
+          <div>
+            <h3>Design Office Coordinator <span class="org">· Birleşim Mühendislik</span></h3>
+            <div class="proj">
+              <span class="ptitle">Court of Cassation Service Building</span>
+              <span class="pmeta">Ankara · 500,000 m² · 2019</span>
+              <ul>
+                <li>BIM-based material take-off and quantity surveying</li>
+                <li>Field coordination via Revit</li>
+                <li>Upgraded model from LOD 300 to LOD 400</li>
+                <li>As-Built project delivery</li>
+              </ul>
+            </div>
+            <div class="proj">
+              <span class="ptitle">Trendyol Ankara Logistics Center</span>
+              <span class="pmeta">Ankara · 85,000 m² · 2021</span>
+              <ul>
+                <li>BIM-based take-off and on-site coordination</li>
+                <li>Progress-payment attachments &amp; As-Built</li>
+              </ul>
+            </div>
+            <div class="proj">
+              <span class="ptitle">Çukurova Airport</span>
+              <span class="pmeta">Mersin · 90,000 m² · 2022</span>
+              <ul>
+                <li>Field fabrication coordination</li>
+                <li>Progress-payment attachments &amp; As-Built</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2018 — 2019<br><span class="where">Technical Office</span></div>
+          <div>
+            <h3>Technical Office Manager <span class="org">· Epik Holding</span></h3>
+            <p style="margin:0 0 6px;font-size:13px;color:var(--ink-2);">Concurrently led shop drawings, quantity take-off, architectural Revit modelling and coordination on the following embassy projects:</p>
+            <ul>
+              <li>Shenyang, China — U.S. Embassy</li>
+              <li>Freetown, Sierra Leone — U.S. Embassy</li>
+              <li>Dhaka, Bangladesh — U.S. Embassy</li>
+              <li>Dhaka, Bangladesh — Turkish Embassy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2017 — 2018<br><span class="where">Design Office</span></div>
+          <div>
+            <h3>Design Office Coordinator <span class="org">· Atakon Mühendislik</span></h3>
+            <div class="proj">
+              <span class="ptitle">Istanbul Airport — Utility Center</span>
+              <span class="pmeta">Ankara · 116,000 m² · 2017</span>
+              <ul>
+                <li>BIM-based material take-off</li>
+                <li>Field coordination through BIM &amp; Revit</li>
+                <li>Upgraded model from LOD 300 to LOD 450</li>
+                <li>As-Built project delivery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2015 — 2017<br><span class="where">Technical Office</span></div>
+          <div>
+            <h3>Technical Office Manager <span class="org">· YDA Group</span></h3>
+            <div class="proj">
+              <span class="ptitle">YDA Park Avenue</span>
+              <span class="pmeta">Ankara · 1,150,000 m² · 2015</span>
+              <ul>
+                <li>Material take-off &amp; equipment procurement</li>
+                <li>Site coordination planning</li>
+              </ul>
+            </div>
+            <div class="proj">
+              <span class="ptitle">YDA Söğütözü Residences &amp; Offices</span>
+              <span class="pmeta">Ankara · 368,700 m² · 2016</span>
+              <ul>
+                <li>Material take-off &amp; equipment procurement</li>
+                <li>Adapted site coordination drawings to BIM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2014 — 2015<br><span class="where">Technical Office</span></div>
+          <div>
+            <h3>Technical Office Manager <span class="org">· Atakon Mühendislik</span></h3>
+            <div class="proj">
+              <span class="ptitle">Doğuş Oto Kartal Service &amp; Showroom</span>
+              <span class="pmeta">Istanbul · 150,000 m² · 2014</span>
+              <ul>
+                <li>Material take-off, procurement, As-Built</li>
+                <li>Site coordination planning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2010 — 2014<br><span class="where">QC · Tech. Office</span></div>
+          <div>
+            <h3>QC &amp; Technical Office Manager <span class="org">· Delta Mühendislik</span></h3>
+            <div class="proj"><span class="ptitle">Rixos Bomonti Residence</span><span class="pmeta">Istanbul · 45,500 m² · 2011</span><ul><li>Mechanical QC &amp; commissioning on a 45-storey high-rise</li></ul></div>
+            <div class="proj"><span class="ptitle">Forum Kayseri Mall</span><span class="pmeta">Kayseri · 160,000 m² · 2012</span><ul><li>All mechanical QC and commissioning</li></ul></div>
+            <div class="proj"><span class="ptitle">Koru Florya Mall</span><span class="pmeta">Istanbul · 200,000 m² · 2013</span><ul><li>Take-off, site coordination, As-Built</li></ul></div>
+            <div class="proj"><span class="ptitle">Hazar TV Media Building</span><span class="pmeta">Azerbaijan · 160,000 m² · 2013</span><ul><li>Material take-off &amp; site coordination</li></ul></div>
+            <div class="proj"><span class="ptitle">Mall of Istanbul</span><span class="pmeta">Istanbul · 500,000 m² · 2014</span><ul><li>Take-off, coordination, progress-payments</li></ul></div>
+            <div class="proj"><span class="ptitle">Head Office · Tendering</span><span class="pmeta">2014</span><ul><li>Quantity &amp; take-off control in the tendering department</li></ul></div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2008 — 2010<br><span class="where">Site</span></div>
+          <div>
+            <h3>Site Manager <span class="org">· Pozitif Mühendislik</span></h3>
+            <div class="proj"><span class="ptitle">Bitlis Eren University</span><span class="pmeta">Bitlis · 130,000 m² · 2008</span><ul><li>Mechanical installation — Rectorate &amp; Faculty of Arts &amp; Sciences</li></ul></div>
+            <div class="proj"><span class="ptitle">Eczacıbaşı Karo Seramik A.Ş.</span><span class="pmeta">Bilecik · 145,000 m² · 2009</span><ul><li>Mechanical installation — factory &amp; admin. building</li></ul></div>
+            <div class="proj"><span class="ptitle">White Hill Mall</span><span class="pmeta">Istanbul · 16,500 m² · 2010</span><ul><li>Mechanical installation — public mall areas</li></ul></div>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="when">2008<br><span class="where">Production</span></div>
+          <div>
+            <h3>Production Design Lead <span class="org">· Anadolu Metal</span></h3>
+            <p style="margin:6px 0 0;font-size:13px;color:var(--ink-2);">Detailing of steel-construction components and managing the assembly programme.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">03 — Education<span class="sub">Academic</span></div>
+      <div>
+        <div class="entry"><div class="when">2018 — 2020<br><span class="where">Associate</span></div><div><h3>Web Design &amp; Coding <span class="org">· Anadolu University</span></h3></div></div>
+        <div class="entry"><div class="when">2008 — 2010<br><span class="where">Associate</span></div><div><h3>Faculty of Economics <span class="org">· Anadolu University</span></h3></div></div>
+        <div class="entry"><div class="when">2006 — 2008<br><span class="where">Associate</span></div><div><h3>Mechanical Drafting &amp; Construction <span class="org">· Abant İzzet Baysal University</span></h3></div></div>
+        <div class="entry"><div class="when">2002 — 2006<br><span class="where">High School</span></div><div><h3>Alibeyköy Anadolu High School</h3></div></div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">04 — Skills<span class="sub">Tools &amp; Abilities</span></div>
+      <div class="skill-grid">
+        <div class="skill-block"><h4>BIM &amp; Modelling</h4><p>Revit (MEP &amp; Architecture), Navisworks, BIM 360 coordination, LOD 300–450 modelling, clash detection, As-Built delivery.</p></div>
+        <div class="skill-block"><h4>CAD &amp; 3D</h4><p>AutoCAD, SolidWorks, shop drawings, steel-construction detailing, 2D &amp; 3D coordination.</p></div>
+        <div class="skill-block"><h4>Technical Office</h4><p>Quantity take-off, BOQ, procurement, progress-payment attachments, site coordination, commissioning.</p></div>
+        <div class="skill-block"><h4>Management</h4><p>Design office leadership, team coordination, project management, advanced Excel, OHS.</p></div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">05 — Certifications<span class="sub">Training</span></div>
+      <ul class="cert-grid">
+        <li>Yıldız-SEM · AutoCAD Certificate Programme</li>
+        <li>Yıldız-SEM · SolidWorks Certificate Programme</li>
+        <li>Istanbul MMO · Revit MEP Training</li>
+        <li>Navisworks Training Certificate</li>
+        <li>Advanced Excel Training</li>
+        <li>Project Management Training</li>
+        <li>Entrepreneurship Training</li>
+        <li>Occupational Health &amp; Safety Training</li>
+        <li>First Aid Certificate Programme</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">06 — Languages<span class="sub">Foreign Languages</span></div>
+      <div>
+        <div class="lang-row" style="--lvl: 100%;"><span class="name-l">Turkish</span><span class="meter"></span><span class="level">Native</span></div>
+        <div class="lang-row" style="--lvl: 55%;"><span class="name-l">English</span><span class="meter"></span><span class="level">B1 · Intermediate</span></div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <div class="section-label">07 — References<span class="sub">Contact</span></div>
+      <div class="ref-grid">
+        <div class="ref-card"><div class="rname">Tolga Özer</div><div class="rtitle">Mechanical Engineer</div><div class="rphone">+90 535 779 37 16</div></div>
+        <div class="ref-card"><div class="rname">Varol Yüksel</div><div class="rtitle">Mechanical Engineer</div><div class="rphone">+90 533 698 76 79</div></div>
+        <div class="ref-card"><div class="rname">Ali Arslan</div><div class="rtitle">Mechanical Engineer</div><div class="rphone">+90 533 346 03 29</div></div>
+      </div>
+    </section>
+
+    <footer class="cv-foot">
+      <span>Mehmet Ertürk Uludaşdemir <span class="mark">●</span> Curriculum Vitæ</span>
+      <span>May 2026</span>
+    </footer>
+  </article>
+</div>
+
+<script>
+const CV_DATA = {
+  lang: 'en',
+  name: ['MEHMET ERTÜRK', 'ULUDAŞDEMİR'],
+  role: 'BIM MECHANICAL INSTALLATION DESIGN SPECIALIST',
+  contact: ['erturkuludasdemir@gmail.com', '+90 539 292 28 93', 'merturku.com'],
+  objective: { title: ['01 — OBJECTIVE', 'PROFESSIONAL SUMMARY'], body: 'With over 18 years of experience in mechanical installation and BIM, I have successfully managed technical office and site operations across diverse project types and scales — including shopping centres, airports, residential towers, and public buildings. I have taken an active role in establishing in-house BIM workflows, fully parametric 3D modelling of projects, and ensuring interdisciplinary coordination. I have extensive hands-on experience in model development from LOD 300 to LOD 450, clash detection, progress payment attachments, and As-Built deliverables. I am highly proficient in Revit MEP, Navisworks, AutoCAD, and SolidWorks. My goal is to further develop my expertise in BIM coordination and continue delivering sustainable, efficient solutions on large-scale projects.' },
+  experienceTitle: ['02 — EXPERIENCE', 'WORK HISTORY'],
+  experience: [
+    { when: '2023 — Present', where: 'ANKARA', title: 'Mechanical Section Chief', org: 'Güryapı', items: [
+      { t: 'Saraçoğlu Neighbourhood', m: 'Ankara · 125,000 m² · 2023', b: ['Field fabrication coordination', 'Progress-payment attachments & As-Built', 'Testing & commissioning'] },
+      { t: 'Abidin Pasha Mansion — War of Independence Museum', m: 'Ankara · 2,000 m² · 2024', b: ['Material take-off & site coordination', 'Progress-payment attachments & As-Built', 'Testing & commissioning'] },
+      { t: 'AOÇ Beştepe National Garden', m: 'Ankara · 450,000 m² · 2026', b: ['Field fabrication coordination', 'Progress-payment attachments & As-Built', 'Testing & commissioning'] },
+    ]},
+    { when: '2019 — Present', where: 'ANKARA', title: 'Design Office Coordinator', org: 'Birleşim Mühendislik', items: [
+      { t: 'Court of Cassation Service Building', m: 'Ankara · 500,000 m² · 2019', b: ['BIM-based material take-off and quantity surveying', 'Field coordination via Revit', 'Upgraded model from LOD 300 to LOD 400', 'As-Built project delivery'] },
+      { t: 'Trendyol Ankara Logistics Center', m: 'Ankara · 85,000 m² · 2021', b: ['BIM-based take-off and on-site coordination', 'Progress-payment attachments & As-Built'] },
+      { t: 'Çukurova Airport', m: 'Mersin · 90,000 m² · 2022', b: ['Field fabrication coordination', 'Progress-payment attachments & As-Built'] },
+    ]},
+    { when: '2018 — 2019', where: 'TECHNICAL OFFICE', title: 'Technical Office Manager', org: 'Epik Holding',
+      free: 'Concurrently led shop drawings, take-off, architectural Revit modelling and coordination on the following embassy projects:',
+      bulletList: ['Shenyang, China — U.S. Embassy', 'Freetown, Sierra Leone — U.S. Embassy', 'Dhaka, Bangladesh — U.S. Embassy', 'Dhaka, Bangladesh — Turkish Embassy'] },
+    { when: '2017 — 2018', where: 'DESIGN OFFICE', title: 'Design Office Coordinator', org: 'Atakon Mühendislik', items: [
+      { t: 'Istanbul Airport — Utility Center', m: 'Ankara · 116,000 m² · 2017', b: ['BIM-based material take-off', 'Field coordination through BIM & Revit', 'Upgraded model from LOD 300 to LOD 450', 'As-Built project delivery'] },
+    ]},
+    { when: '2015 — 2017', where: 'TECHNICAL OFFICE', title: 'Technical Office Manager', org: 'YDA Group', items: [
+      { t: 'YDA Park Avenue', m: 'Ankara · 1,150,000 m² · 2015', b: ['Material take-off & equipment procurement', 'Site coordination planning'] },
+      { t: 'YDA Söğütözü Residences & Offices', m: 'Ankara · 368,700 m² · 2016', b: ['Material take-off & equipment procurement', 'Adapted site coordination drawings to BIM'] },
+    ]},
+    { when: '2014 — 2015', where: 'TECHNICAL OFFICE', title: 'Technical Office Manager', org: 'Atakon Mühendislik', items: [
+      { t: 'Doğuş Oto Kartal Service & Showroom', m: 'Istanbul · 150,000 m² · 2014', b: ['Material take-off, procurement, As-Built', 'Site coordination planning'] },
+    ]},
+    { when: '2010 — 2014', where: 'QC · TECH. OFFICE', title: 'QC & Technical Office Manager', org: 'Delta Mühendislik', items: [
+      { t: 'Rixos Bomonti Residence', m: 'Istanbul · 45,500 m² · 2011', b: ['Mechanical QC & commissioning on a 45-storey high-rise'] },
+      { t: 'Forum Kayseri Mall', m: 'Kayseri · 160,000 m² · 2012', b: ['All mechanical QC and commissioning'] },
+      { t: 'Koru Florya Mall', m: 'Istanbul · 200,000 m² · 2013', b: ['Take-off, site coordination, As-Built'] },
+      { t: 'Hazar TV Media Building', m: 'Azerbaijan · 160,000 m² · 2013', b: ['Material take-off & site coordination'] },
+      { t: 'Mall of Istanbul', m: 'Istanbul · 500,000 m² · 2014', b: ['Take-off, coordination, progress-payments'] },
+      { t: 'Head Office · Tendering', m: '2014', b: ['Quantity & take-off control in the tendering department'] },
+    ]},
+    { when: '2008 — 2010', where: 'SITE', title: 'Site Manager', org: 'Pozitif Mühendislik', items: [
+      { t: 'Bitlis Eren University', m: 'Bitlis · 130,000 m² · 2008', b: ['Mechanical installation — Rectorate & Faculty of Arts & Sciences'] },
+      { t: 'Eczacıbaşı Karo Seramik A.Ş.', m: 'Bilecik · 145,000 m² · 2009', b: ['Mechanical installation — factory & admin. building'] },
+      { t: 'White Hill Mall', m: 'Istanbul · 16,500 m² · 2010', b: ['Mechanical installation — public mall areas'] },
+    ]},
+    { when: '2008', where: 'PRODUCTION', title: 'Production Design Lead', org: 'Anadolu Metal',
+      free: 'Detailing of steel-construction components and managing the assembly programme.' },
+  ],
+  educationTitle: ['03 — EDUCATION', 'ACADEMIC'],
+  education: [
+    ['2018 — 2020', 'Web Design & Coding', 'Anadolu University'],
+    ['2008 — 2010', 'Faculty of Economics', 'Anadolu University'],
+    ['2006 — 2008', 'Mechanical Drafting & Construction', 'Abant İzzet Baysal University'],
+    ['2002 — 2006', 'Alibeyköy Anadolu High School', 'High School'],
+  ],
+  skillsTitle: ['04 — SKILLS', 'TOOLS & ABILITIES'],
+  skills: [
+    ['BIM & Modelling', 'Revit (MEP & Architecture), Navisworks, BIM 360 coordination, LOD 300–450 modelling, clash detection, As-Built delivery.'],
+    ['CAD & 3D', 'AutoCAD, SolidWorks, shop drawings, steel-construction detailing, 2D & 3D coordination.'],
+    ['Technical Office', 'Quantity take-off, BOQ, procurement, progress-payment attachments, site coordination, commissioning.'],
+    ['Management', 'Design office leadership, team coordination, project management, advanced Excel, OHS.'],
+  ],
+  certsTitle: ['05 — CERTIFICATIONS', 'TRAINING'],
+  certs: ['Yıldız-SEM · AutoCAD Certificate Programme', 'Yıldız-SEM · SolidWorks Certificate Programme', 'Istanbul MMO · Revit MEP Training', 'Navisworks Training Certificate', 'Advanced Excel Training', 'Project Management Training', 'Entrepreneurship Training', 'Occupational Health & Safety Training', 'First Aid Certificate Programme'],
+  languagesTitle: ['06 — LANGUAGES', 'FOREIGN LANGUAGES'],
+  languages: [['Turkish', 'Native'], ['English', 'B1 · Intermediate']],
+  referencesTitle: ['07 — REFERENCES', 'CONTACT'],
+  references: [['Tolga Özer', 'Mechanical Engineer', '+90 535 779 37 16'], ['Varol Yüksel', 'Mechanical Engineer', '+90 533 698 76 79'], ['Ali Arslan', 'Mechanical Engineer', '+90 533 346 03 29']],
+  filename: 'Mehmet-Erturk-Uludasdemir-CV-EN.docx',
+  ui: { prep: 'Generating…', done: '✓ Downloaded', err: 'Error — retry' }
+};
+
+async function downloadDocx() {
+  const btn = event.target; const original = btn.textContent; btn.textContent = CV_DATA.ui.prep;
+  try {
+    const { Document, Packer, Paragraph, TextRun, BorderStyle, Table, TableRow, TableCell, WidthType, VerticalAlign } = await import('https://cdn.jsdelivr.net/npm/docx@8.5.0/+esm');
+    const ACCENT = 'B0552C', INK = '1A1815', INK2 = '4A4640', INK3 = '8A847A', RULE='E6E0D4';
+    const noBorder = { top:{style:BorderStyle.NONE}, bottom:{style:BorderStyle.NONE}, left:{style:BorderStyle.NONE}, right:{style:BorderStyle.NONE}, insideH:{style:BorderStyle.NONE}, insideV:{style:BorderStyle.NONE} };
+    const cell = (children, opts={}) => new TableCell({ children, borders: { top:{style:BorderStyle.NONE,size:0,color:'FFFFFF'}, bottom:{style:BorderStyle.NONE,size:0,color:'FFFFFF'}, left:{style:BorderStyle.NONE,size:0,color:'FFFFFF'}, right:{style:BorderStyle.NONE,size:0,color:'FFFFFF'} }, margins: { top: 60, bottom: 60, left: 100, right: 100 }, verticalAlign: VerticalAlign.TOP, ...opts });
+    const body = (t, o={}) => new TextRun({ text: t, font: 'Calibri', size: 20, color: INK, ...o });
+
+    const sectionTable = (labelA, labelB, contentParagraphs) => {
+      const labelCell = cell([
+        new Paragraph({ children: [new TextRun({ text: labelA, font: 'Consolas', size: 16, bold: true, color: ACCENT, characterSpacing: 40 })], spacing: { after: 40 } }),
+        new Paragraph({ children: [new TextRun({ text: labelB, font: 'Consolas', size: 14, color: INK3, characterSpacing: 40 })] }),
+      ], { width: { size: 2400, type: WidthType.DXA } });
+      const contentCell = cell(contentParagraphs, { width: { size: 7000, type: WidthType.DXA } });
+      return new Table({
+        rows: [new TableRow({ children: [labelCell, contentCell] })],
+        width: { size: 9400, type: WidthType.DXA },
+        columnWidths: [2400, 7000],
+        borders: { top:{style:BorderStyle.SINGLE,size:8,color:RULE}, bottom:{style:BorderStyle.NONE}, left:{style:BorderStyle.NONE}, right:{style:BorderStyle.NONE}, insideH:{style:BorderStyle.NONE}, insideV:{style:BorderStyle.NONE} },
+      });
+    };
+    const spacer = (h=120) => new Paragraph({ spacing: { before: 0, after: h }, children: [new TextRun({ text: '' })] });
+
+    const headerRail = new Paragraph({
+      spacing: { after: 240 },
+      border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: RULE, space: 4 } },
+      children: [
+        new TextRun({ text: 'CURRICULUM VITÆ', font: 'Consolas', size: 16, bold: true, color: INK3, characterSpacing: 40 }),
+        new TextRun({ text: '   ●   ', color: ACCENT, font: 'Consolas', size: 16 }),
+        new TextRun({ text: 'ÖZGEÇMİŞ', font: 'Consolas', size: 16, color: INK3, characterSpacing: 40 }),
+        new TextRun({ text: '                                                                       MAY 2026 · ENGLISH', font: 'Consolas', size: 14, color: INK3, characterSpacing: 30 }),
+      ],
+    });
+
+    const headerNameRow = new TableRow({ children: [
+      cell([
+        new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: CV_DATA.name[0], font: 'Georgia', size: 56, color: INK })] }),
+        new Paragraph({ spacing: { after: 120 }, children: [new TextRun({ text: CV_DATA.name[1], font: 'Georgia', size: 56, color: ACCENT, italics: true })] }),
+        new Paragraph({ children: [
+          new TextRun({ text: 'BIM COORDINATOR', font: 'Consolas', size: 16, color: INK2, characterSpacing: 40 }),
+          new TextRun({ text: '   —   ETIMESGUT / ANKARA', font: 'Consolas', size: 16, color: INK3, characterSpacing: 40 }),
+        ]}),
+      ], { width: { size: 5800, type: WidthType.DXA } }),
+      cell([
+        new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: 'EMAIL', font: 'Consolas', size: 13, color: INK3, characterSpacing: 30 })] }),
+        new Paragraph({ spacing: { after: 80 }, children: [new TextRun({ text: 'erturkuludasdemir@gmail.com', font: 'Calibri', size: 18, color: INK })] }),
+        new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: 'PHONE', font: 'Consolas', size: 13, color: INK3, characterSpacing: 30 })] }),
+        new Paragraph({ spacing: { after: 80 }, children: [new TextRun({ text: '+90 539 292 28 93', font: 'Calibri', size: 18, color: INK })] }),
+        new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: 'WEB', font: 'Consolas', size: 13, color: INK3, characterSpacing: 30 })] }),
+        new Paragraph({ children: [new TextRun({ text: 'merturku.com', font: 'Calibri', size: 18, color: INK })] }),
+      ], { width: { size: 3600, type: WidthType.DXA }, verticalAlign: VerticalAlign.BOTTOM }),
+    ]});
+    const headerTable = new Table({ rows: [headerNameRow], width: { size: 9400, type: WidthType.DXA }, columnWidths: [5800, 3600], borders: noBorder });
+
+    const entryTable = (when, where, title, org, contentParas) => new Table({
+      rows: [new TableRow({ children: [
+        cell([
+          new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: when, font: 'Consolas', size: 16, color: INK3, characterSpacing: 20 })] }),
+          new Paragraph({ children: [new TextRun({ text: where.toUpperCase(), font: 'Consolas', size: 13, color: INK2, characterSpacing: 30 })] }),
+        ], { width: { size: 1800, type: WidthType.DXA } }),
+        cell([
+          new Paragraph({ spacing: { after: 60 }, children: [
+            new TextRun({ text: title, font: 'Georgia', size: 26, color: INK }),
+            new TextRun({ text: '  ·  ' + org, font: 'Georgia', italics: true, size: 22, color: INK3 }),
+          ]}),
+          ...contentParas,
+        ], { width: { size: 5200, type: WidthType.DXA } }),
+      ]})],
+      width: { size: 7000, type: WidthType.DXA },
+      columnWidths: [1800, 5200],
+      borders: { top:{style:BorderStyle.NONE}, bottom:{style:BorderStyle.DASHED,size:4,color:RULE}, left:{style:BorderStyle.NONE}, right:{style:BorderStyle.NONE}, insideH:{style:BorderStyle.NONE}, insideV:{style:BorderStyle.NONE} },
+    });
+
+    const projBlock = (it) => {
+      const out = [];
+      out.push(new Paragraph({
+        spacing: { before: 100, after: 30 },
+        border: { left: { style: BorderStyle.SINGLE, size: 12, color: ACCENT, space: 8 } },
+        children: [
+          new TextRun({ text: it.t, font: 'Georgia', size: 20, color: INK }),
+          new TextRun({ text: '   ' + it.m, font: 'Consolas', size: 14, color: INK3, characterSpacing: 20 }),
+        ],
+      }));
+      for (const b of it.b) out.push(new Paragraph({
+        spacing: { after: 20 }, indent: { left: 360, hanging: 180 },
+        children: [new TextRun({ text: '•  ', color: ACCENT, bold: true }), body(b, { size: 18 })],
+      }));
+      return out;
+    };
+
+    const buildEntry = (e) => {
+      const inner = [];
+      if (e.items) for (const it of e.items) inner.push(...projBlock(it));
+      if (e.free) inner.push(new Paragraph({ spacing: { after: 60 }, children: [body(e.free, { size: 18, color: INK2 })] }));
+      if (e.bulletList) for (const b of e.bulletList) inner.push(new Paragraph({
+        spacing: { after: 20 }, indent: { left: 360, hanging: 180 },
+        children: [new TextRun({ text: '•  ', color: ACCENT, bold: true }), body(b, { size: 18 })],
+      }));
+      return entryTable(e.when, e.where, e.title, e.org, inner);
+    };
+
+    const c = [];
+    c.push(headerRail);
+    c.push(headerTable);
+    c.push(spacer(200));
+
+    c.push(sectionTable(CV_DATA.objective.title[0], CV_DATA.objective.title[1],
+      [new Paragraph({ children: [new TextRun({ text: CV_DATA.objective.body, font: 'Georgia', size: 22, color: INK })] })]
+    ));
+    c.push(spacer(160));
+
+    const expContent = [];
+    for (const e of CV_DATA.experience) { expContent.push(buildEntry(e)); expContent.push(spacer(40)); }
+    c.push(sectionTable(CV_DATA.experienceTitle[0], CV_DATA.experienceTitle[1], expContent));
+    c.push(spacer(160));
+
+    const eduContent = [];
+    for (const [w, t, o] of CV_DATA.education) {
+      eduContent.push(new Table({
+        rows: [new TableRow({ children: [
+          cell([new Paragraph({ children: [new TextRun({ text: w, font: 'Consolas', size: 16, color: INK3, characterSpacing: 20 })] })], { width: { size: 1800, type: WidthType.DXA } }),
+          cell([new Paragraph({ children: [
+            new TextRun({ text: t, font: 'Georgia', size: 22, color: INK }),
+            new TextRun({ text: '  ·  ' + o, font: 'Georgia', italics: true, size: 20, color: INK3 }),
+          ]})], { width: { size: 5200, type: WidthType.DXA } }),
+        ]})],
+        width: { size: 7000, type: WidthType.DXA },
+        columnWidths: [1800, 5200],
+        borders: { top:{style:BorderStyle.NONE}, bottom:{style:BorderStyle.DASHED,size:4,color:RULE}, left:{style:BorderStyle.NONE}, right:{style:BorderStyle.NONE}, insideH:{style:BorderStyle.NONE}, insideV:{style:BorderStyle.NONE} },
+      }));
+      eduContent.push(spacer(30));
+    }
+    c.push(sectionTable(CV_DATA.educationTitle[0], CV_DATA.educationTitle[1], eduContent));
+    c.push(spacer(160));
+
+    const skillCell = ([h, p]) => cell([
+      new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: '● ' + h, font: 'Consolas', size: 16, bold: true, color: ACCENT, characterSpacing: 30 })] }),
+      new Paragraph({ children: [new TextRun({ text: p, font: 'Calibri', size: 18, color: INK2 })] }),
+    ], { width: { size: 3500, type: WidthType.DXA }, margins: { top: 80, bottom: 80, left: 100, right: 200 } });
+    const skillTable = new Table({
+      rows: [
+        new TableRow({ children: [skillCell(CV_DATA.skills[0]), skillCell(CV_DATA.skills[1])] }),
+        new TableRow({ children: [skillCell(CV_DATA.skills[2]), skillCell(CV_DATA.skills[3])] }),
+      ],
+      width: { size: 7000, type: WidthType.DXA }, columnWidths: [3500, 3500], borders: noBorder,
+    });
+    c.push(sectionTable(CV_DATA.skillsTitle[0], CV_DATA.skillsTitle[1], [skillTable]));
+    c.push(spacer(160));
+
+    const certRows = [];
+    for (let i = 0; i < CV_DATA.certs.length; i += 2) {
+      const a = CV_DATA.certs[i], b = CV_DATA.certs[i+1] || '';
+      certRows.push(new TableRow({ children: [
+        cell([new Paragraph({ children: [new TextRun({ text: '✓ ', color: ACCENT, bold: true }), body(a, { size: 18, color: INK2 })] })], { width: { size: 3500, type: WidthType.DXA } }),
+        cell([new Paragraph({ children: b ? [new TextRun({ text: '✓ ', color: ACCENT, bold: true }), body(b, { size: 18, color: INK2 })] : [body('')] })], { width: { size: 3500, type: WidthType.DXA } }),
+      ]}));
+    }
+    const certTable = new Table({ rows: certRows, width: { size: 7000, type: WidthType.DXA }, columnWidths: [3500, 3500], borders: { top:{style:BorderStyle.NONE}, bottom:{style:BorderStyle.NONE}, left:{style:BorderStyle.NONE}, right:{style:BorderStyle.NONE}, insideH:{style:BorderStyle.DOTTED,size:4,color:RULE}, insideV:{style:BorderStyle.NONE} } });
+    c.push(sectionTable(CV_DATA.certsTitle[0], CV_DATA.certsTitle[1], [certTable]));
+    c.push(spacer(160));
+
+    const langContent = [];
+    for (const [n, lv] of CV_DATA.languages) {
+      langContent.push(new Paragraph({ spacing: { before: 40, after: 80 }, children: [
+        new TextRun({ text: n, font: 'Georgia', size: 22, color: INK }),
+        new TextRun({ text: '          ' + lv.toUpperCase(), font: 'Consolas', size: 14, color: INK3, characterSpacing: 30 }),
+      ]}));
+    }
+    c.push(sectionTable(CV_DATA.languagesTitle[0], CV_DATA.languagesTitle[1], langContent));
+    c.push(spacer(160));
+
+    const refCell = ([n, t, p]) => cell([
+      new Paragraph({ spacing: { after: 30 }, children: [new TextRun({ text: n, font: 'Georgia', size: 22, color: INK })] }),
+      new Paragraph({ spacing: { after: 60 }, children: [new TextRun({ text: t.toUpperCase(), font: 'Consolas', size: 13, color: INK3, characterSpacing: 30 })] }),
+      new Paragraph({ children: [new TextRun({ text: p, font: 'Consolas', size: 16, color: INK })] }),
+    ], { width: { size: 2333, type: WidthType.DXA }, margins: { top: 160, bottom: 160, left: 200, right: 200 } });
+    const refTable = new Table({
+      rows: [new TableRow({ children: CV_DATA.references.map(r => refCell(r)) })],
+      width: { size: 7000, type: WidthType.DXA }, columnWidths: [2333, 2333, 2334],
+      borders: { top:{style:BorderStyle.SINGLE,size:4,color:RULE}, bottom:{style:BorderStyle.SINGLE,size:4,color:RULE}, left:{style:BorderStyle.SINGLE,size:4,color:RULE}, right:{style:BorderStyle.SINGLE,size:4,color:RULE}, insideH:{style:BorderStyle.SINGLE,size:4,color:RULE}, insideV:{style:BorderStyle.SINGLE,size:4,color:RULE} },
+    });
+    c.push(sectionTable(CV_DATA.referencesTitle[0], CV_DATA.referencesTitle[1], [refTable]));
+
+    const doc = new Document({
+      creator: 'Mehmet Ertürk Uludaşdemir', title: 'CV',
+      styles: { default: { document: { run: { font: 'Calibri', size: 20 } } } },
+      sections: [{ properties: { page: { margin: { top: 1000, right: 900, bottom: 1000, left: 900 } } }, children: c }],
+    });
+    const blob = await Packer.toBlob(doc);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = CV_DATA.filename; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    btn.textContent = CV_DATA.ui.done;
+    setTimeout(() => btn.textContent = original, 2500);
+  } catch (e) {
+    console.error(e); btn.textContent = CV_DATA.ui.err;
+    setTimeout(() => btn.textContent = original, 2500);
+  }
+}
+</script>
+</body>
+</html>

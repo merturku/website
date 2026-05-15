@@ -40,6 +40,12 @@ const hero = load('hero.yaml');
             {hero.cta.getInTouch.icon && <lord-icon src={liSrc(hero.cta.getInTouch.icon)} trigger="morph" colors={LI.dark} class="li-md"></lord-icon>}
           </a>
         )}
+        {hero.cta.downloadCV && (
+          <a href={hero.cta.downloadCV.href} download class="inline-flex items-center gap-2 px-5 py-2.5 border border-border rounded-[6px] text-ink-secondary text-[15px] sm:text-[16px] font-medium hover:border-accent hover:text-accent transition-all no-underline">
+            <lord-icon src={liSrc("wkppekyc")} trigger="morph" colors={LI.dark} class="li-md"></lord-icon>
+            {hero.cta.downloadCV.label}
+          </a>
+        )}
       </div>
     )}
   </div>

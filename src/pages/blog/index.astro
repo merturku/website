@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
 import { load } from '../../lib/data';
 
 const site = load('site.yaml');
@@ -10,9 +11,17 @@ const posts = (await getCollection('blog'))
 ---
 
 <BaseLayout title={`Blog | ${site.name}`} description="Blog yazıları">
-  <main class="max-w-[720px] mx-auto px-6 py-20">
-    <h1 class="font-display text-[40px] font-bold text-ink mb-2">Blog</h1>
-    <p class="text-ink-secondary mb-12">iOS geliştirme, BIM ve teknoloji üzerine yazılar.</p>
+  <Navbar />
+
+  <section class="px-5 md:px-6 pt-20 pb-12 md:pb-16 bg-surface">
+    <div class="max-w-[780px] mx-auto md:mx-0 md:ml-[max(calc((100%-1100px)/2),2rem)]">
+      <p class="text-[13px] md:text-[15px] font-mono text-accent tracking-[0.12em] uppercase mb-4 md:mb-5">Yazılar</p>
+      <h1 class="font-display text-[42px] sm:text-[52px] md:text-[76px] lg:text-[90px] font-bold text-ink leading-[1.05] tracking-[-0.02em] mb-5 md:mb-7">Blog</h1>
+      <p class="text-[17px] md:text-[20px] text-ink-secondary leading-[1.7] max-w-[580px]">iOS geliştirme, BIM ve teknoloji üzerine yazılar.</p>
+    </div>
+  </section>
+
+  <main class="max-w-[720px] mx-auto px-6 py-12">
 
     <div class="space-y-8">
       {posts.map(post => (
