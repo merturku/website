@@ -13,5 +13,5 @@ cta:
     href: "#contact"
     icon: "vcdutftw"
   downloadCV:
-    label: "CV İndir"
-    href: "/cv/Mehmet Ertürk Uludaşdemir - CV TR.pdf"
+    label: "CV"
+    href: "/cv"
