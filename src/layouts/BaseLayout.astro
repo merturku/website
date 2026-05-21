@@ -78,7 +78,27 @@ const ogImageUrl = site.ogImage ? new URL(site.ogImage, Astro.site).toString() :
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}favicon.svg`} />
   </head>
   <body class="bg-surface text-ink min-h-screen transition-colors duration-300">
-    <slot />
+
+    <!-- Preloader — sadece ana sayfa ilk ziyarette -->
+    <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-surface"
+         style="display:none !important">
+      <div class="flex flex-col items-start gap-6 px-8">
+        <p id="pre-label" class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-tertiary">
+          Deneyim hazırlanıyor
+        </p>
+        <div class="flex items-end gap-3">
+          <span id="pre-count" class="font-display text-[80px] sm:text-[120px] font-bold text-ink leading-none tracking-[-0.03em]">00</span>
+          <span class="font-display text-[40px] sm:text-[60px] font-bold text-accent leading-[1.2] mb-1">%</span>
+        </div>
+        <div class="w-full h-[1px] bg-border overflow-hidden" style="width:min(480px,80vw)">
+          <div id="pre-bar" class="h-full bg-accent transition-none" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-content" style="opacity:0">
+      <slot />
+    </div>
 
     <!-- Scroll reveal observer -->
     <script>
@@ -226,6 +246,56 @@ const ogImageUrl = site.ogImage ? new URL(site.ogImage, Astro.site).toString() :
       window.addEventListener('load', () => {
         setTimeout(setupIcons, 200);
       });
+    </script>
+
+    <!-- Preloader script -->
+    <script>
+      (function () {
+        const isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
+        const seen   = sessionStorage.getItem('intro-seen');
+        const loader = document.getElementById('preloader') as HTMLElement;
+        const page   = document.getElementById('page-content') as HTMLElement;
+        const count  = document.getElementById('pre-count') as HTMLElement;
+        const bar    = document.getElementById('pre-bar') as HTMLElement;
+
+        if (!isHome || seen || !loader) {
+          // Alt sayfalar veya tekrar ziyaret: direkt göster
+          if (loader) loader.remove();
+          if (page) page.style.opacity = '1';
+          return;
+        }
+
+        // İlk ziyaret, ana sayfa: preloader'ı göster
+        loader.style.cssText = '';
+        page.style.opacity = '0';
+
+        let current = 0;
+        const total = 100;
+        const duration = 1800; // ms
+        const interval = duration / total;
+
+        const timer = setInterval(() => {
+          current++;
+          const display = String(current).padStart(2, '0');
+          count.textContent = display;
+          bar.style.width = current + '%';
+
+          if (current >= total) {
+            clearInterval(timer);
+            sessionStorage.setItem('intro-seen', '1');
+
+            // Kısa bekleme sonrası yukarı kayarak çıkış
+            setTimeout(() => {
+              loader.style.transition = 'transform 0.7s cubic-bezier(0.76,0,0.24,1), opacity 0.5s ease';
+              loader.style.transform  = 'translateY(-100%)';
+              loader.style.opacity    = '0';
+              page.style.transition   = 'opacity 0.5s ease 0.3s';
+              page.style.opacity      = '1';
+              setTimeout(() => loader.remove(), 800);
+            }, 200);
+          }
+        }, interval);
+      })();
     </script>
   </body>
 </html>
