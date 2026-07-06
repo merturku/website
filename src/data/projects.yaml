@@ -28,26 +28,9 @@ items:
       - iOS 17+
       - StoreKit 2
 
-  - title: "Hidayet"
-    subtitle: "İslami yaşam asistanı"
-    description: "Namaz vakitleri, Kuran ve hadis, alışkanlık takibi, günlük, kıble pusulası ve tesbih sayacı içeren kapsamlı İslami yaşam uygulaması. Glassmorphic tasarım ve offline-first mimari."
-    icon: "oqhqyeud"
-    status: "Yayında"
-    featured: true
-    links:
-      - url: "https://apps.apple.com"
-        icon: "tvzjrcxe"
-        label: "App Store"
-    tech:
-      - SwiftUI
-      - SwiftData
-      - iOS 17.6+
-      - CoreLocation
-      - StoreKit 2
-
-  - title: "GPS Tracker "
+  - title: "PrivGeo"
     subtitle: "Aile konum takip uygulaması"
-    description: "Ebeveynlerin çocuklarını ve aile üyelerini güvenle takip etmesini sağlayan konum takip uygulaması. Gerçek zamanlı konum paylaşımı ve güvenli bölge bildirimleri."
+    description: "Ebeveynlerin çocuklarını ve aile üyelerini gizlilik odaklı bir şekilde takip etmesini sağlayan konum takip uygulaması. Gerçek zamanlı konum paylaşımı ve güvenli bölge bildirimleri."
     icon: "exymduqj"
     status: "Yayında"
     featured: true
@@ -62,10 +45,10 @@ items:
       - iOS 17+
       - StoreKit 2
 
-  - title: "Ledgerly"
-    subtitle: "Kişisel finans takip uygulaması"
-    description: "Türk kullanıcılar için tasarlanmış kişisel finans uygulaması. Gelir/gider takibi, borç ve varlık yönetimi. Türk Lirası desteği ve freemium monetizasyon modeli."
-    icon: "btvefodi"
+  - title: "BabyNamer"
+    subtitle: "İsim bulma uygulaması"
+    description: "Ebeveynlerin bebeklerine isim bulmasına yardımcı olan uygulama. Kültürel ve anlamsal filtreleme özellikleri ile Türkçe isim veritabanı."
+    icon: "fikcyfpp"
     status: "Yayında"
     featured: true
     links:
@@ -75,26 +58,9 @@ items:
     tech:
       - SwiftUI
       - SwiftData
-      - StoreKit 2
-      - iOS 17+
-      - Turkish L10n
-
-  - title: "BabyNamer"
-    subtitle: "İsim bulma uygulaması"
-    description: "Ebeveynlerin bebeklerine isim bulmasına yardımcı olan uygulama. Kültürel ve anlamsal filtreleme özellikleri ile Türkçe isim veritabanı."
-    icon: "fikcyfpp"
-    status: "Yayında"
-    featured: false
-    links:
-      - url: "https://apps.apple.com"
-        icon: "tvzjrcxe"
-        label: "App Store"
-    tech:
-      - SwiftUI
-      - SwiftData
       - iOS 17+
 
-  - title: "Şems - Sun Tracker"
+  - title: "SunCalc"
     subtitle: "Güneş takip ve AR uygulaması"
     description: "Uydu harita görselleştirmesi, AR modu ve astronomik hesaplamalar içeren güneş takip uygulaması. Türk pazarı için özel olarak tasarlandı."
     icon: "wsaaegar"

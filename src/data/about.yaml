@@ -2,12 +2,13 @@ label: "01 // HAKKIMDA"
 heading: "İnşaat ve yazılım dünyasını birleştiriyorum"
 
 paragraphs:
-  - 'iOS Developer ve BIM Uzmanı olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. SwiftUI ile modern mobil uygulamalar geliştirirken inşaat sektöründeki teknik birikimimi yazılım projelerime yansıtıyorum.'
-  - 'Geliştirdiğim uygulamalar arasında bebek takip uygulaması <strong class="text-ink">Lilio</strong>, konum takip uygulaması <strong class="text-ink">GPS Tracker  </strong>, İslami yaşam asistanı <strong class="text-ink">Hidayet</strong> ve kişisel finans uygulaması <strong class="text-ink">Ledgerly</strong> yer alıyor.'
+  - 'iOS Developer ve BIM Uzmanı olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. 2015''ten bu yana büyük ölçekli inşaat projelerinde Revit MEP ile teknik koordinasyon yürütüyor, 2023''ten itibaren SwiftUI ile App Store''da yayınlanan mobil uygulamalar geliştiriyorum.'
+  - 'Şantiyede edindiğim disiplin doğrudan yazılıma taşınıyor: karmaşık sistemleri modüllere ayırıp uçtan uca koordine etmek, sıfır toleranslı hata payıyla çalışmak, büyük ölçekli projelerde teknik sorumluluk almak. Bu yaklaşımı; sağlam mimari, temiz kullanıcı deneyimi ve uzun vadeli sürdürülebilirlik önceliğiyle uygulamalarıma yansıtıyorum.'
+  - 'App Store''da yayınladığım uygulamalar arasında bebek takip uygulaması <strong class="text-ink">Lilio</strong>, konum takip uygulaması <strong class="text-ink">PrivGeo</strong> ve isim bulma uygulaması <strong class="text-ink">BabyNamer</strong> yer alıyor. Şu anda güneş takip uygulaması <strong class="text-ink">SunCalc</strong> üzerinde çalışıyorum.'
   - 'iOS geliştirme deneyimlerimi <a href="/blog" class="font-medium">blogumda</a> paylaşıyor, Türkçe konuşan geliştirici topluluğuna katkı sağlamaya çalışıyorum.'
 
 stats:
-  - value: "4+"
+  - value: "3+"
     label: "Yayınlanan Uygulama"
     icon: "kbtmbyzy"
   - value: "iOS"
