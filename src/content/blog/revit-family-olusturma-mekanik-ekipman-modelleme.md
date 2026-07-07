@@ -48,6 +48,16 @@ Sık yapılan bir hata, family'yi gereğinden fazla geometrik detayla modellemek
 
 Tek seferlik bir family oluşturmak yerine, sık kullanılan ekipman tiplerini (klima santrali, pompa, fan, boyler gibi) bir kütüphane haline getirmek uzun vadede büyük zaman kazandırıyor. Şirket içinde standart bir family kütüphanesi oluşturulduğunda, her projede sıfırdan modelleme yapmak yerine mevcut family'ler üzerinde küçük parametre ayarlamalarıyla ihtiyaç karşılanabiliyor. Bu yaklaşım aynı zamanda projeler arası tutarlılığı da artırıyor.
 
+## Family Testi ve Doğrulama
+
+Bir family'yi tamamladıktan sonra doğrudan proje modeline dahil etmek yerine, önce ayrı bir test dosyasında denemekten yanayım. Bu testte kontrol ettiğim noktalar: farklı tip parametrelerinin (örneğin kapasite varyasyonlarının) geometriyi doğru şekilde değiştirip değiştirmediği, connector'ların sistem tanımlarken doğru kanal/boru tipini önerip önermediği ve family'nin farklı görünüm açılarında (plan, kesit, 3D) beklenen şekilde göründüğü. Sahada birkaç kez, bir tip parametresi değiştirildiğinde geometrinin beklenmedik şekilde bozulduğunu ya da connector'ın ekipmanla birlikte doğru yönde dönmediğini gördüm; bu tür hatalar, family proje moduna aktarıldıktan ve onlarca kez yerleştirildikten sonra fark edilirse düzeltmesi çok daha zahmetli oluyor.
+
+Ayrıca family'nin dosya boyutunu ve açılma performansını da test etmekte fayda var. Özellikle karmaşık geometrili ekipmanlarda (örneğin çok sayıda bileşenden oluşan bir klima santrali), gereksiz iç içe geçmiş (nested) family kullanımı performansı ciddi şekilde etkileyebiliyor. Bu yüzden test aşamasında family'nin tek başına açılma ve yerleştirilme hızını da değerlendiriyorum.
+
+## Üretici Verisiyle Model Verisini Güncel Tutmak
+
+Projeler ilerledikçe, seçilen ekipmanın üretici ya da modeli değişebiliyor; bu durumda family'nin de güncellenmesi gerekiyor. Deneyimlerimde, ekipman değişikliklerinin family'ye yansıtılmaması, model ile saha arasında ciddi tutarsızlıklara yol açan en sık nedenlerden biri. Bu yüzden proje sürecinde ekipman onayları (malzeme onay formları, teknik doküman incelemeleri) ile BIM model güncellemelerini birbirine bağlı bir süreç olarak yürütmek gerekiyor; bir ekipman onaylandığında, bu bilginin BIM ekibine geri bildirilmesi ve family'nin gerekiyorsa revize edilmesi standart bir iş akışı haline getirilmeli. Bu tutarlılık, ilerleyen aşamalarda özellikle metraj ve satın alma süreçlerinde ciddi karışıklıkları önlüyor.
+
 ## Sık Karşılaşılan Hatalar
 
 - **Connector tiplerinin yanlış seçilmesi:** Hava kanalı connector'ı yerine boru connector'ı kullanmak, sistemin ekipmanı tanımamasına yol açıyor.

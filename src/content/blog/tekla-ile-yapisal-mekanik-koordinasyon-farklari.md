@@ -7,7 +7,7 @@ category: "bim"
 draft: false
 ---
 
-Revit MEP tarafında çalışan bir BIM uzmanı olarak, çelik veya betonarme taşıyıcı sistemi Tekla Structures ile modellenen projelerde koordinasyon yürütmek, alışılmış Revit-Revit iş akışından belirgin şekilde farklı. Tekla ile yapısal-mekanik koordinasyon farkları, çoğu zaman yazılımların kendi mantığından değil, iki disiplinin farklı önceliklerle çalışmasından kaynaklanıyor. Bu yazıda sahada ve model ortamında karşılaştığım temel farkları ve bu farkları yönetmenin yollarını anlatacağım.
+Revit MEP tarafında çalışan bir BIM uzmanı olarak, çelik veya betonarme taşıyıcı sistemi Tekla Structures ile modellenen projelerde koordinasyon yürütmek, alışılmış Revit-Revit iş akışından belirgin şekilde farklı. Tekla ile yapısal-mekanik koordinasyon farkları, çoğu zaman yazılımların kendi mantığından değil, iki disiplinin farklı önceliklerle çalışmasından kaynaklanıyor. Özellikle çelik konstrüksiyonlu endüstriyel tesislerde ve yüksek katlı yapılarda bu iki dünyanın kesişimi, projenin en kritik koordinasyon aşamalarından birini oluşturuyor. Bu yazıda sahada ve model ortamında karşılaştığım temel farkları ve bu farkları yönetmenin yollarını anlatacağım.
 
 ## İki Farklı Modelleme Felsefesi
 

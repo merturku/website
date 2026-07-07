@@ -37,6 +37,16 @@ Sıhhi tesisat hatları, özellikle asma tavan içi bölgelerde HVAC kanalları,
 
 Sahada en sık karşılaştığım sıhhi tesisat sorunu, modelde doğru tanımlanmış eğimin, imalat sırasında askı yüksekliklerinin yanlış uygulanması yüzünden bozulması. Bu yüzden sıhhi tesisat imalatı sırasında saha ekiplerine modelden alınan kot bilgilerini net şekilde iletmek ve askı yüksekliklerinin kontrolünü düzenli aralıklarla yapmak gerekiyor. Ayrıca, revizyon süreçlerinde bir hattın güzergahı değiştirildiğinde eğim değerinin yeniden kontrol edilmemesi de sık yapılan bir hata; her revizyonda eğim kontrolünü otomatik bir adım haline getirmek işe yarıyor.
 
+Bir diğer tipik sorun, sıhhi tesisat armatürlerinin (lavabo, klozet, gider gibi) mimari tasarımda son anda değişmesi ve bu değişikliğin BIM modeline zamanında yansıtılmaması. Mimari planda bir ıslak hacmin yeri veya armatür sayısı değiştiğinde, bu değişiklik sıhhi tesisat modeline hemen işlenmezse, koordinasyon toplantılarında güncel olmayan bir düzen üzerinden tartışma yürütülmüş oluyor. Bu yüzden mimari ve sıhhi tesisat ekipleri arasında değişiklik bildirimlerinin hızlı aktığı bir iletişim akışı kurmak, modelin güncelliğini korumak açısından kritik.
+
+## İşletme Aşamasına Katkısı
+
+Sıhhi tesisat modelinin BIM ortamında oluşturulması, sadece inşaat aşamasında değil, binanın işletmeye alınmasından sonra da değer üretiyor. Vana konumları, temizleme gözü (rögar) yerleri ve ana hat güzergahları, bina işletme ekibi için modelden doğrudan sorgulanabilir hale geliyor. Özellikle büyük ölçekli yapılarda, yıllar sonra bir tıkanıklık veya arıza durumunda, sahada kazı yapmadan önce modelden hattın güzergahını ve eğimini kontrol edebilmek, işletme ekiplerine büyük zaman kazandırıyor. Bu nedenle proje teslim sürecinde sıhhi tesisat modelinin as-built haliyle işletme ekibine eksiksiz devredilmesine özellikle önem veriyorum.
+
+## Metraj ve Malzeme Yönetimindeki Katkısı
+
+Sıhhi tesisat modelinin doğru parametrelerle oluşturulması, metraj çıkarma sürecine de doğrudan katkı sağlıyor. Boru çapı, uzunluğu, dirsek ve rakor sayısı gibi veriler model üzerinden otomatik olarak listelenebildiğinde, hem keşif hem de satın alma süreçleri çok daha hızlı ve hatasız ilerliyor. Bu konuyu genel hatlarıyla [BIM ile Miktar Metraj (Quantity Takeoff)](/blog/bim-ile-miktar-metraj-quantity-takeoff) yazımda ele alıyorum; sıhhi tesisat özelinde ek olarak, farklı çap ve malzemedeki boru miktarlarının birbirinden ayrı raporlanabilmesi, saha lojistiği açısından da büyük kolaylık sağlıyor. Örneğin bir kat için gereken belirli çaptaki boru miktarını modelden anlık olarak çekebilmek, sahaya malzeme sevkiyatının doğru zamanlanmasına yardımcı oluyor.
+
 ## Sonuç ve Pratik Öneriler
 
 Sıhhi tesisat modellemesinde BIM kullanımı, doğru uygulandığında sahada yaşanacak ciddi işlevsel sorunları tasarım aşamasında önlüyor. Pratik önerilerim:

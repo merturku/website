@@ -1,36 +1,4 @@
 label: "04 // BECERİLER"
 heading: "Teknoloji Yığını"
 
-categories:
-  - name: "iOS Geliştirme"
-    icon: "lzgmgrnn"
-    items:
-      - SwiftUI
-      - Swift
-      - SwiftData
-      - StoreKit 2
-      - CoreLocation
-      - MapKit
-      - ARKit
-      - MVVM
-
-  - name: "Araçlar & Platform"
-    icon: "gvtjlyjf"
-    items:
-      - Xcode
-      - Git
-      - GitHub
-      - Vercel
-      - Figma
-      - TestFlight
-      - App Store Connect
-
-  - name: "Web & Diğer"
-    icon: "xqdfobxg"
-    items:
-      - Astro
-      - Tailwind CSS
-      - TypeScript
-      - HTML
-      - CSS
-      - YAML
+categories: []

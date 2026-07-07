@@ -47,6 +47,18 @@ Kararların modele işlenip işlenmediğinin doğrulanması da ayrı bir adım. 
 - **Kararları sözlü bırakmak:** Yazılı kayıt olmadan alınan kararlar unutuluyor ya da farklı hatırlanıyor.
 - **Şantiye perspektifini dışarıda bırakmak:** Sadece model üzerinden yürütülen, saha uygulanabilirliğinin göz ardı edildiği toplantılar, sonradan revizyon maliyeti doğuruyor.
 
+## Toplantı Sıklığı ve Proje Aşamasına Göre Ritim
+
+Koordinasyon toplantılarının sıklığı, projenin hangi aşamada olduğuna göre değişmeli. Tasarım geliştirme aşamasında, disiplinler arası güzergahlar henüz oturmamışken haftalık ritim genelde yeterli oluyor. Ancak imalat/uygulama projesi aşamasına geçildiğinde ve şantiyede montaj başladığında, bu ritmi haftada iki kez ya da hatta kritik bölgeler için günlük kısa "stand-up" toplantılarına çıkarmak gerekebiliyor. Sahada gördüğüm kadarıyla, proje ilerledikçe toplantı sıklığını sabit tutmak, ya erken aşamada gereksiz zaman kaybına ya da uygulama aşamasında yetersiz koordinasyona yol açıyor. Bu yüzden toplantı takvimini proje programıyla birlikte gözden geçirip, kritik imalat dönemlerinde ritmi artırmak önemli bir pratik.
+
+Bir diğer nokta, farklı ölçekte toplantılar tanımlamak. Tüm disiplinlerin katıldığı genel koordinasyon toplantısının yanında, sadece iki disiplin arasında (örneğin mekanik ve elektrik) yaşanan yoğun çakışma bölgeleri için daha küçük, odaklı "ikili koordinasyon" oturumları düzenlemek, genel toplantının gündemini şişirmeden sorunların çözülmesini sağlıyor. Bu tür küçük oturumlar genelde 15-20 dakika sürüyor ama genel toplantıda saatlerce tartışılabilecek konuları önceden temizliyor.
+
+## Uzaktan Katılım ve Dağınık Ekiplerde Koordinasyon
+
+Özellikle büyük projelerde tasarım ekibi, yüklenici ve şantiye kadrosu farklı şehirlerde hatta farklı ülkelerde konumlanmış olabiliyor. Bu durumda koordinasyon toplantılarının bir kısmının uzaktan (online) yürütülmesi kaçınılmaz hale geliyor. Deneyimlerimde uzaktan yürütülen toplantılarda en büyük risk, ekran paylaşımı üzerinden model gezintisinin yavaş ve kesintili olması; bu da toplantı süresini gereksiz uzatıyor. Bu riski azaltmak için model dosyalarının toplantı öncesinde tüm katılımcılara paylaşılmış olması, toplantı sırasında sadece belirli görünümlerin (view) ekranda gösterilmesi işe yarıyor.
+
+Ayrıca uzaktan toplantılarda karar kayıtlarının daha da titizlikle tutulması gerekiyor; çünkü yüz yüze toplantılarda olduğu gibi toplantı sonrası koridor sohbetiyle netleşen ek detaylar burada eksik kalabiliyor. Bu yüzden uzaktan yürütülen oturumlarda, toplantı biter bitmez karar tablosunun tüm katılımcılara dağıtılmasını bir kural haline getirdim.
+
 ## Sonuç
 
 BIM koordinasyon toplantıları, iyi yönetildiğinde projenin en değerli karar alma mekanizmalarından biri haline geliyor. Anahtar nokta, toplantıyı bir keşif değil bir karar alma platformu olarak konumlandırmak. Net bir gündem, doğru katılımcılar, disiplinli bir karar takip süreci ve toplantı dışında yürütülen sağlam bir çakışma tespiti altyapısı bir araya geldiğinde, koordinasyon toplantıları kısa sürede projeyi gerçekten ileri taşıyan oturumlara dönüşüyor.

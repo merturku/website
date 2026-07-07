@@ -5,8 +5,8 @@ description: "İnşaat ve yazılım dünyasını birleştiriyorum: SwiftUI ile i
 
 cta:
   viewWork:
-    label: "Projelerimi Gör"
-    href: "#experience"
+    label: "Uzmanlık Alanlarım"
+    href: "#specialties"
     icon: "zhiiqoue"
   getInTouch:
     label: "İletişime Geç"

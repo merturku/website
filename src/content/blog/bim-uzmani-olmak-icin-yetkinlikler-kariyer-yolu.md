@@ -33,6 +33,14 @@ BIM kariyer yolunda genellikle gözlemlediğim basamaklar şöyle ilerliyor: ön
 
 Teknik yetkinlikler kadar önemli olan bir diğer konu, iletişim ve sunum becerileri. BIM uzmanı, çoğu zaman farklı disiplinlerden gelen ve BIM sürecine farklı derecede aşina ekiplerle çalışıyor. Bir çakışma raporunu ya da bir koordinasyon önerisini karşı tarafın anlayacağı şekilde, teknik jargona boğmadan aktarabilmek, uzun vadede kariyeri en çok besleyen becerilerden biri oldu benim için. Ayrıca proje yönetimi bilgisi de zamanla kaçınılmaz hale geliyor; özellikle BIM koordinatörlüğü seviyesine geçtikçe takvim, kaynak planlaması ve raporlama becerileri devreye giriyor.
 
+## Hangi Alt Uzmanlıklardan Başlanabilir
+
+BIM alanına giriş yaparken hangi alt uzmanlıktan başlanacağı sık sorulan bir soru. Kendi tecrübeme dayanarak, mekanik tesisat modellemesi (Revit MEP), yeni başlayanlar için görece erişilebilir bir giriş noktası çünkü sistemlerin mantığı (hat, debi, kesit) diğer mühendislik derslerinden aşinalık taşıyor. Buradan clash detection ve koordinasyon süreçlerine, oradan da LOD yönetimi ve miktar metraj gibi daha analitik konulara geçmek doğal bir ilerleme sağlıyor. HVAC modelleme, sıhhi tesisat ya da yangın tesisatı gibi alt disiplinlerin her biri kendi başına uzmanlaşma alanı sunuyor; bu konudaki teknik detayları [HVAC sistemlerinin BIM ile modellenmesi yazısında](/blog/hvac-sistemlerinin-bim-ile-3-boyutlu-modellenmesi) ele almıştım. Önemli olan, tek bir alt disiplinde derinleşmeden önce genel BIM sürecinin bütününü kavramak.
+
+## Şirket İçi mi Danışmanlık mı
+
+Kariyer yolunda karşılaşılan bir diğer karar noktası, bir yüklenici veya taşeron firmada şirket içi BIM ekibinde çalışmak mı, yoksa bağımsız bir BIM danışmanlık firmasında görev almak mı sorusu. Şirket içi pozisyonlarda genellikle belirli bir disiplinde derinleşme ve saha ile daha yakın temas imkânı bulunuyor; danışmanlık tarafında ise farklı projelerde, farklı ölçeklerde çalışma fırsatı ve daha geniş bir süreç görme imkânı ortaya çıkıyor. Kendi kariyerimde her iki modelin de farklı yetkinlikler kazandırdığını gördüm; yeni başlayanlara ilk birkaç yılını şirket içi bir pozisyonda, sahaya yakın kalarak geçirmelerini, sonrasında isterlerse danışmanlık tarafına geçmelerini öneriyorum.
+
 ## Sürekli Öğrenme Gerekliliği
 
 BIM alanı hızlı değişen bir alan; yeni yazılım sürümleri, yeni işbirliği platformları ve değişen mevzuat gereksinimleri (bu konuyu [Türkiye'de BIM zorunluluğu yazısında](/blog/turkiyede-bim-zorunlulugu-kamu-ihaleleri) ele almıştım) sürekli takip gerektiriyor. Kariyer yolunda durağan kalmamak için düzenli olarak sektördeki gelişmeleri takip etmek, yeni araçları denemek ve mümkünse farklı ölçekte projelerde yer almak büyük fark yaratıyor.

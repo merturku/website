@@ -41,6 +41,14 @@ Geçiş sürecinde en sık karşılaştığım zorluklar arasında; ekip içi ye
 
 Geçişin en somut faydalarından biri, miktar metraj çıkarma sürecinde ortaya çıkıyor. 2D'de manuel yapılan metraj hesaplamaları, BIM modelinde büyük ölçüde otomatikleşiyor ve hata payı azalıyor. Bu konuyu [miktar metraj yazısında](/blog/bim-ile-miktar-metraj-quantity-takeoff) daha detaylı ele almıştım; geçiş sürecinde ekiplere bu kazanımı erken göstermek, BIM'in değerini somut şekilde kanıtlamanın en etkili yollarından biri.
 
+## Geçiş Sonrası Koordinasyon Alışkanlığı
+
+BIM'e geçişi tamamlayan ofislerin bir sonraki doğal adımı, artık kendi içlerinde ürettikleri modeli diğer disiplinlerle (mimari, statik) koordine etmeye başlamak oluyor. Bu aşamada ofisler genellikle Navisworks gibi bir koordinasyon platformuna da alışmak zorunda kalıyor; modelleme becerisini kazanmış ama koordinasyon deneyimi olmayan ekipler için bu ikinci bir öğrenme eğrisi anlamına geliyor. Deneyimlerimde, geçiş sürecini planlayan ofislerin bu ikinci aşamayı da baştan öngörüp, modelleme eğitiminin hemen ardından koordinasyon eğitimini de takvime alması, geçişin bütünsel olarak çok daha sağlıklı ilerlemesini sağlıyor. Koordinasyon toplantılarının nasıl verimli yürütüleceğine dair gözlemlerimi [bu yazıda](/blog/bim-koordinasyon-toplantilari-nasil-yonetilir) paylaşmıştım.
+
+## Beklentileri Doğru Yönetmek
+
+Geçiş sürecinde ofis yönetiminin en sık yaptığı hata, BIM'in ilk projeden itibaren anında verimlilik artışı getireceğini beklemek. Gerçekte ilk birkaç proje, ekibin yeni araçlara alıştığı ve hatalardan öğrendiği bir öğrenme dönemi oluyor; bu dönemde verimlilik hatta bir miktar düşebiliyor. Bu durumu baştan kabul etmek ve yönetime bu şekilde aktarmak, geçiş sürecinin ortasında sabırsızlıkla vazgeçme riskini azaltıyor. Sahada gördüğüm kadarıyla, üç ile beş proje arasında bir olgunlaşma süreci geçiren ofisler, sonrasında 2D'ye kıyasla belirgin bir hız ve doğruluk kazanımı elde ediyor.
+
 ## Sonuç ve Pratik Öneriler
 
 2D tesisat projelendirmeden BIM'e geçiş, doğru planlandığında ofisler için büyük bir verimlilik kazanımına dönüşüyor. Sahadaki gözlemlerime dayanarak önerilerim:

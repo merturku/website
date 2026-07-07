@@ -7,7 +7,7 @@ category: "bim"
 draft: false
 ---
 
-Sahada ve ofiste geçirdiğim yıllar boyunca, Türkiye'de BIM zorunluluğu konusunun giderek daha fazla gündeme geldiğini gözlemliyorum. Bazı Avrupa ülkelerinde kamu projelerinde BIM kullanımı yıllardır zorunlu tutulurken, Türkiye'de bu süreç daha kademeli ilerliyor. Bu yazıda, sektörde çalışan bir BIM uzmanı gözünden mevcut durumu, kamu ihalelerindeki eğilimleri ve önümüzdeki dönemde beklenen dönüşümü ele alacağım.
+Sahada ve ofiste geçirdiğim yıllar boyunca, Türkiye'de BIM zorunluluğu konusunun giderek daha fazla gündeme geldiğini gözlemliyorum. Bazı Avrupa ülkelerinde kamu projelerinde BIM kullanımı yıllardır zorunlu tutulurken, Türkiye'de bu süreç daha kademeli ilerliyor. Özellikle büyük hastane, havalimanı ve toplu konut gibi ölçekli kamu yatırımlarında BIM'in artık neredeyse fiili bir standart haline geldiğini, ancak bunun henüz kapsamlı bir yasal zorunluluğa dönüşmediğini görüyorum. Bu yazıda, sektörde çalışan bir BIM uzmanı gözünden mevcut durumu, kamu ihalelerindeki eğilimleri ve önümüzdeki dönemde beklenen dönüşümü ele alacağım.
 
 ## Mevcut Durum: Zorunluluktan Çok Teşvik
 
@@ -28,6 +28,14 @@ Kamu tarafında BIM zorunluluğu konusundaki temkinli yaklaşımın birkaç nede
 ## BIM Uzmanları İçin Ne Anlama Geliyor
 
 Bu tablo, benim gibi sahada çalışan BIM uzmanları için hem fırsat hem de sorumluluk anlamına geliyor. Mevzuat henüz olgunlaşmamışken sektörde deneyim kazanan uzmanlar, zorunluluk yaygınlaştığında ciddi bir rekabet avantajı elde edecek. Aynı zamanda bu dönemde BIM süreçlerinin doğru kurulması, ileride zorunluluk geldiğinde firmaların uyum sürecini çok daha kolay atlatmasını sağlayacak. Kariyerini bu alanda ilerletmek isteyenlere, mevzuatı beklemeden şimdiden BIM yetkinliği kazanmalarını öneriyorum; bu konuyu [BIM uzmanı olmak için gerekli yetkinlikler yazısında](/blog/bim-uzmani-olmak-icin-yetkinlikler-kariyer-yolu) daha geniş ele almıştım.
+
+## Küçük ve Orta Ölçekli Firmalar İçin Zorluk
+
+Türkiye'de BIM zorunluluğu tartışmalarında en az konuşulan ama sahada en çok hissedilen konulardan biri, küçük ve orta ölçekli mekanik tesisat taşeronlarının bu geçişe hazır olup olmadığı. Büyük yüklenici firmalar genellikle kendi BIM ekiplerini kurabilecek kaynağa sahipken, taşeron ölçeğindeki firmalar için hem yazılım lisans maliyeti hem de yetişmiş personel bulmak ciddi bir engel oluşturuyor. Sahada gördüğüm kadarıyla, büyük yüklenicinin BIM talep ettiği ama taşeronun bu konuda deneyimsiz olduğu projelerde, koordinasyon yükü fiilen ana yüklenicinin BIM ekibine yükleniyor. Bu dengesizlik, zorunluluk yaygınlaştıkça sektörde ciddi bir eğitim ve kapasite geliştirme ihtiyacı doğuracak gibi görünüyor.
+
+## Meslek Odaları ve Eğitim Kurumlarının Rolü
+
+Mevzuatın olgunlaşma sürecinde meslek odalarının ve üniversitelerin rolü de giderek artıyor. Makine mühendisliği ve inşaat mühendisliği bölümlerinde BIM'e yönelik derslerin müfredata girmesi, mezun olan yeni mühendislerin sektöre BIM yetkinliğiyle donanmış şekilde girmesini sağlıyor. Bununla birlikte, hâlihazırda sektörde çalışan ve 2D kültürüyle yetişmiş mühendislerin de BIM'e adapte olması gerekiyor; bu noktada meslek odalarının düzenlediği sertifika programları ve atölye çalışmaları önemli bir köprü görevi görüyor. Bu dönüşümün sektördeki genel yansımasını, geleneksel 2D projelendirmeden gelen ofislerin yaşadığı geçiş sürecini [2D'den BIM'e geçiş rehberinde](/blog/2d-tesisat-projelendirmeden-bim-e-gecis-rehberi) daha kapsamlı ele almıştım.
 
 ## Beklenen Gelişmeler
 

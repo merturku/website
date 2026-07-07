@@ -42,6 +42,16 @@ Türkiye'de kamu ihalelerinde BIM gereksinimi henüz her projede zorunlu değil,
 
 Ayrıca şartnamede istenen teslim formatlarının, kullanılan yazılım ile uyumlu olup olmadığı kontrol edilmeli. Farklı yazılımlar arasında (Revit, Tekla, AutoCAD MEP) veri alışverişinde format kayıpları yaşanabiliyor; bu riski şartname aşamasında öngörmek, proje ilerledikçe ortaya çıkabilecek uyumsuzlukları azaltıyor.
 
+## Şartname Değerlendirme Sürecinde Kontrol Noktaları
+
+Bir mekanik tesisat şartnamesini ihale aşamasında değerlendirirken, sadece BIM maddelerinin var olup olmadığına değil, bu maddelerin sözleşmenin diğer bölümleriyle tutarlı olup olmadığına da bakmak gerekiyor. Örneğin şartnamede "haftalık koordinasyon toplantısı yapılacaktır" yazıyorsa, bunun için gereken personel ve zaman, iş programına ve teklif bedeline yansıtılmış mı diye kontrol ediyorum. Sahada sık gördüğüm bir durum, BIM gereksinimlerinin teklif aşamasında maliyetlendirilmemesi; sonradan yüklenici bu ek iş yükünü "şartnamede vardı ama kimse bunun için bütçe ayırmamıştı" diyerek revize etmek zorunda kalıyor. Bu yüzden şartname değerlendirmesi yapılırken, BIM ile ilgili her maddenin karşılığında bir kaynak (personel, yazılım lisansı, zaman) planlanmış olduğundan emin olmak gerekiyor.
+
+Bir başka kontrol noktası, şartnamede tanımlanan gereksinimlerin proje ölçeğiyle orantılı olup olmadığı. Küçük ölçekli bir projede tüm disiplinler için haftalık, çok detaylı koordinasyon raporları istemek, gereksiz bir yük yaratabiliyor; büyük ve karmaşık bir projede ise yetersiz tanımlanmış BIM gereksinimleri koordinasyon eksikliğine yol açabiliyor. Bu dengeyi kurmak için şartname hazırlarken proje büyüklüğü, disiplin sayısı ve mekanik tesisatın karmaşıklık derecesi göz önünde bulundurulmalı.
+
+## Sözleşme Aşamasında BIM Sorumluluklarının Netleştirilmesi
+
+Şartnamede BIM gereksinimleri tanımlanmış olsa bile, bu gereksinimlerin hangi tarafın sorumluluğunda olduğu net değilse anlaşmazlıklar yaşanabiliyor. Özellikle çok disiplinli projelerde, koordinasyon modelinin kim tarafından birleştirileceği (genel yüklenici mi, ayrı bir BIM koordinatörü mü, yoksa işveren tarafında bir ekip mi) baştan tanımlanmalı. Aynı şekilde, bir çakışma tespit edildiğinde bunu çözme sorumluluğunun hangi disiplinde olduğu da (örneğin mekanik güzergah mı değişecek, yoksa elektrik kablo tavası mı) şartnamede ya da BEP'te belirtilmeli. Bu sorumluluk tanımları eksik olduğunda, koordinasyon toplantılarında "bu bizim sorumluluğumuzda değil" tartışmaları toplantı süresinin önemli bir kısmını yiyebiliyor.
+
 ## Sık Karşılaşılan Sorunlar
 
 - **Ölçülemeyen gereksinimler:** "Yüksek kaliteli koordinasyon" gibi ifadeler denetlenebilir değil; somut ölçütlerle (örneğin çakışma sayısı, LOD seviyesi) ifade edilmeli.

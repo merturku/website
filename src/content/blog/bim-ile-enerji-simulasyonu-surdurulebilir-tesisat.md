@@ -42,6 +42,14 @@ Bir diğer zorluk, farklı yazılımlar arasındaki veri aktarımında yaşanan 
 
 Enerji simülasyonunun asıl değeri, sonuçların tekrar tasarıma geri beslenmesinde ortaya çıkıyor. Simülasyon bir kere yapılıp rapor haline getirilip kenara konursa, pratik bir faydası olmuyor. Benim izlediğim yaklaşım, tasarımın erken aşamasında birkaç alternatif senaryoyu hızlıca simüle edip, sonuçlara göre mekanik sistem seçimini ve kanal/boru boyutlandırmasını buna göre şekillendirmek. Bu iteratif süreç, projenin ilerleyen aşamalarında büyük revizyonlara gerek kalmadan daha verimli bir tasarıma ulaşmayı sağlıyor.
 
+## Yeşil Bina Sertifikasyonu ile İlişkisi
+
+BIM tabanlı enerji simülasyonu, sadece iç kullanım için değil, LEED, BREEAM gibi yeşil bina sertifikasyon süreçlerinde de talep edilen bir çıktı haline geliyor. Bu sertifikasyon sistemlerinin enerji performansına dair kredi kategorileri, genelde referans bir bina modeliyle karşılaştırmalı simülasyon sonuçları istiyor. Sahada gördüğüm kadarıyla, sertifikasyon sürecine BIM modeli üzerinden erken başlamak, sonradan ayrı bir enerji modeli oluşturmaya kıyasla çok daha az tekrar iş gerektiriyor; çünkü model zaten koordinasyon amacıyla var olan geometri ve sistem verisini simülasyon için yeniden kullanabiliyor. Sertifikasyon danışmanının proje ekibine erken dahil edilmesi ve hangi verinin model içinde hangi formatta tutulması gerektiğinin baştan netleştirilmesi, bu süreci büyük ölçüde kolaylaştırıyor.
+
+## Ekip İçi Sorumluluk Dağılımı
+
+Enerji simülasyonu sürecinde bir diğer önemli konu, bu işin kimin sorumluluğunda olacağının netleştirilmesi. Bazı projelerde BIM koordinatörü, modelden veri çıkarma ve gBXML aktarımı gibi teknik adımları üstlenirken, simülasyon sonuçlarının yorumlanması ve tasarım kararlarına dönüştürülmesi mekanik tesisat mühendisinin sorumluluğunda kalıyor. Bu iş bölümü net olmadığında, simülasyon sonuçları üretiliyor ama kimse bu sonuçları tasarıma geri taşımıyor ve rapor kenarda kalıyor. Deneyimlerimde en verimli süreç, BIM ekibi ile mekanik tasarım ekibinin simülasyon senaryolarını birlikte belirlediği, sonuçları da birlikte değerlendirdiği ortak çalışma modeli oluyor.
+
 ## Pratik Öneriler
 
 BIM ile enerji simülasyonu ve sürdürülebilir tesisat tasarımı sürecinde dikkat ettiğim noktalar:

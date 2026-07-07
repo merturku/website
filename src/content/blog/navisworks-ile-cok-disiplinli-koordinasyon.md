@@ -45,6 +45,16 @@ Bir diğer sık karşılaşılan sorun, çakışma testlerinin gereğinden fazla
 
 Navisworks üzerinden çıkarılan çakışma raporlarını sadece toplantıda göstermek yeterli değil; bu raporların proje yönetim sistemine (ister BIM 360 ister başka bir platform olsun) aktarılıp, çözüm sürecinin takip edilmesi gerekiyor. Ben her koordinasyon toplantısı sonunda güncellenmiş bir "açık çakışma listesi" paylaşıyorum ve bir sonraki toplantıda önce bu listenin durumu gözden geçiriliyor. Bu basit alışkanlık, çözülmeden unutulan çakışmaların sahada sürpriz olarak ortaya çıkmasını önlüyor ve tüm disiplinlerin sorumluluğunu görünür kılıyor.
 
+Raporlama sürecinde dikkat ettiğim bir başka nokta, her çakışmanın ekran görüntüsü ve model içi görünüm noktasıyla birlikte kaydedilmesi. Sadece eleman ID'leri veya koordinat bilgisi içeren bir rapor, toplantıya katılmayan bir mühendis için çoğu zaman anlaşılır olmuyor. Görsel referans eklemek, hem toplantı dışı okunabilirliği artırıyor hem de aynı çakışmanın farklı kişiler tarafından farklı şekilde yorumlanmasının önüne geçiyor.
+
+## Farklı Yazılım Formatlarıyla Çalışma Deneyimi
+
+Çok disiplinli projelerde her zaman herkes Autodesk ürünlerini kullanmıyor; statik ekip Tekla Structures, mimari ekip ArchiCAD kullanabiliyor. Navisworks'ün NWC/NWD formatına dönüştürme desteği sayesinde bu farklı yazılımlardan gelen modelleri de birleştirilmiş ortamda bir araya getirebiliyoruz. Bu noktada [Tekla ile Yapısal-Mekanik Koordinasyon Farkları](/blog/tekla-ile-yapisal-mekanik-koordinasyon-farklari) yazımda, Tekla modellerinin Navisworks'e aktarılırken karşılaşılan format ve detay farklılıklarını daha kapsamlı ele alıyorum. Burada özetle söylemek gerekirse, farklı yazılımlardan gelen modellerin birleştirilmiş ortamda tutarlı görünmesi için dönüştürme ayarlarının (birim, malzeme kategorisi eşleştirmesi gibi) proje başında standartlaştırılması gerekiyor.
+
+## Ekip Deneyimi ve Öğrenme Süreci
+
+Navisworks'ü ilk kullanmaya başladığım dönemde, aracın kendisinden çok, doğru koordinasyon disiplinini oturtmanın zaman aldığını fark ettim. Yazılımın arayüzünü öğrenmek birkaç gün sürerken, ekip içinde "her hafta düzenli test koş, sonucu önceliklendir, kararları kaydet" alışkanlığını yerleştirmek aylar aldı. Bugün geriye dönüp baktığımda, Navisworks'ün asıl değerinin yazılımsal özelliklerinden çok, disiplinler arası düzenli ve kayıt altına alınmış bir iletişim ritmi oluşturmasında olduğunu düşünüyorum.
+
 ## Sonuç ve Pratik Öneriler
 
 Navisworks ile çok disiplinli koordinasyon sürecini sağlıklı yürütmek için önerilerim:
