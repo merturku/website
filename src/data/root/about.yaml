@@ -1,0 +1,19 @@
+label: "01 // HAKKIMDA"
+heading: "SwiftUI ile modern iOS uygulamaları geliştiriyorum"
+
+paragraphs:
+  - 'iOS Developer olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. 2023''ten bu yana SwiftUI ve SwiftData kullanarak App Store''da yayınlanan mobil uygulamalar geliştiriyorum.'
+  - 'İnşaat sektöründe BIM Uzmanı olarak edindiğim disiplin — karmaşık sistemleri modüllere ayırıp uçtan uca koordine etmek, sıfır toleranslı hata payıyla çalışmak — yazılım geliştirme yaklaşımıma da yansıyor: sağlam mimari, temiz kullanıcı deneyimi ve uzun vadeli sürdürülebilirlik.'
+  - 'App Store''da yayınladığım uygulamalar arasında bebek takip uygulaması <strong class="text-ink">Lilio</strong>, konum takip uygulaması <strong class="text-ink">PrivGeo</strong> ve isim bulma uygulaması <strong class="text-ink">BabyNamer</strong> yer alıyor. Şu anda güneş takip uygulaması <strong class="text-ink">SunCalc</strong> üzerinde çalışıyorum.'
+  - 'iOS geliştirme deneyimlerimi <a href="/blog" class="font-medium">blogumda</a> paylaşıyor, Türkçe konuşan geliştirici topluluğuna katkı sağlamaya çalışıyorum.'
+
+stats:
+  - value: "3+"
+    label: "Yayınlanan Uygulama"
+    icon: "kbtmbyzy"
+  - value: "iOS"
+    label: "SwiftUI & SwiftData"
+    icon: "vbmtnozn"
+  - value: "BIM"
+    label: "İnşaat Teknolojileri"
+    icon: "yvjimpju"

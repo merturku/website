@@ -2,32 +2,38 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
+import Consulting from '../components/Consulting.astro';
 import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
 import Projects from '../components/Projects.astro';
 import Skills from '../components/Skills.astro';
 import Education from '../components/Education.astro';
+import CrossLinks from '../components/CrossLinks.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import { load } from '../lib/data';
 
 const site = load('site.yaml');
 const hero = load('hero.yaml');
+const consulting = load('consulting.yaml');
 const about = load('about.yaml');
 const experience = load('experience.yaml');
 const projects = load('projects.yaml');
 const skills = load('skills.yaml');
 const education = load('education.yaml');
+const crosslinks = load('crosslinks.yaml');
 const contact = load('contact.yaml');
 ---
 <BaseLayout title={site.title || 'Portfolio'} description={site.description || ''}>
   <Navbar />
   {(hero.name || hero.subtitle) && <Hero />}
+  {consulting.headline && <Consulting />}
   {(about.paragraphs || about.stats) && <About />}
   {experience.jobs?.length && <Experience />}
   {projects.items?.length && <Projects />}
   {skills.categories?.length && <Skills />}
   {(education.degree || education.highlights?.length) && <Education />}
+  {crosslinks.items?.length && <CrossLinks />}
   {(contact.heading || site.email) && <Contact />}
   <Footer />
 </BaseLayout>

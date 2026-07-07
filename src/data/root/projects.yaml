@@ -1,0 +1,77 @@
+label: "03 // PROJELER"
+heading: "Uygulamalarım"
+
+statuses:
+  - label: "Tümü"
+  - label: "Yayında"
+    color: "#2D8A56"
+  - label: "Geliştiriliyor"
+    color: "#2E5090"
+  - label: "Arşiv"
+    color: "#6B7280"
+
+items:
+  - title: "Lilio"
+    subtitle: "Bebek takip uygulaması"
+    description: "Ebeveynler için tasarlanmış kapsamlı bebek takip uygulaması. Beslenme, uyku, bez ve büyüme takibi. Tam Türkçe ve İngilizce desteği ile iOS 17+ için SwiftUI ile geliştirildi."
+    icon: "lvrxlmju"
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://apps.apple.com"
+        icon: "tvzjrcxe"
+        label: "App Store"
+    tech:
+      - SwiftUI
+      - SwiftData
+      - MVVM
+      - iOS 17+
+      - StoreKit 2
+
+  - title: "PrivGeo"
+    subtitle: "Aile konum takip uygulaması"
+    description: "Ebeveynlerin çocuklarını ve aile üyelerini gizlilik odaklı bir şekilde takip etmesini sağlayan konum takip uygulaması. Gerçek zamanlı konum paylaşımı ve güvenli bölge bildirimleri."
+    icon: "exymduqj"
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://apps.apple.com"
+        icon: "tvzjrcxe"
+        label: "App Store"
+    tech:
+      - SwiftUI
+      - CoreLocation
+      - MapKit
+      - iOS 17+
+      - StoreKit 2
+
+  - title: "BabyNamer"
+    subtitle: "İsim bulma uygulaması"
+    description: "Ebeveynlerin bebeklerine isim bulmasına yardımcı olan uygulama. Kültürel ve anlamsal filtreleme özellikleri ile Türkçe isim veritabanı."
+    icon: "fikcyfpp"
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://apps.apple.com"
+        icon: "tvzjrcxe"
+        label: "App Store"
+    tech:
+      - SwiftUI
+      - SwiftData
+      - iOS 17+
+
+  - title: "SunCalc"
+    subtitle: "Güneş takip ve AR uygulaması"
+    description: "Uydu harita görselleştirmesi, AR modu ve astronomik hesaplamalar içeren güneş takip uygulaması. Türk pazarı için özel olarak tasarlandı."
+    icon: "wsaaegar"
+    status: "Geliştiriliyor"
+    featured: false
+    links:
+      - url: "https://github.com/merturku"
+        icon: "jjxzcivr"
+        label: "GitHub"
+    tech:
+      - SwiftUI
+      - ARKit
+      - CoreLocation
+      - iOS 17+

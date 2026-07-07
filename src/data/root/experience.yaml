@@ -1,0 +1,16 @@
+label: "02 // DENEYİM"
+heading: "Profesyonel Yolculuk"
+
+jobs:
+  - company: "Serbest / Bağımsız"
+    role: "iOS Developer"
+    location: "Ankara, Türkiye"
+    dateRange: "2023 &ndash; Devam ediyor"
+    description: "SwiftUI ve SwiftData kullanarak App Store'da yayınlanan mobil uygulamalar geliştiriyorum. Lilio (bebek takip), PrivGeo (konum takip) ve BabyNamer (isim bulma) uygulamalarını tasarlayıp geliştirdim. Freemium monetizasyon modelleri ve StoreKit 2 entegrasyonları uyguladım."
+    tech:
+      - SwiftUI
+      - SwiftData
+      - StoreKit 2
+      - iOS 17+
+      - Xcode
+      - MVVM

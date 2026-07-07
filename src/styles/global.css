@@ -175,6 +175,33 @@
   box-shadow: 0 12px 40px rgba(123, 164, 224, 0.08);
 }
 
+/* Preloader intro word draw-in */
+#pre-word {
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.4s cubic-bezier(0.65, 0, 0.35, 1), -webkit-clip-path 1.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#pre-word.reveal-word {
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+}
+
+#pre-dot {
+  animation: float 1s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pre-word {
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
+    transition: none;
+  }
+  #pre-dot {
+    animation: none;
+  }
+}
+
 /* Lord Icon sizing classes */
 lord-icon.li-sm { width: 20px; height: 20px; }
 lord-icon.li-md { width: 22px; height: 22px; }

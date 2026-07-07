@@ -98,18 +98,28 @@ const themeCss = site.theme ? `
     <!-- Preloader — sadece ana sayfa ilk ziyarette -->
     <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-surface"
          style="display:none !important">
-      <div class="flex flex-col items-start gap-6 px-8">
-        <p id="pre-label" class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-tertiary">
-          Deneyim hazırlanıyor
-        </p>
-        <div class="flex items-end gap-3">
-          <span id="pre-count" class="font-display text-[80px] sm:text-[120px] font-bold text-ink leading-none tracking-[-0.03em]">00</span>
-          <span class="font-display text-[40px] sm:text-[60px] font-bold text-accent leading-[1.2] mb-1">%</span>
+      {site.introText ? (
+        <div class="flex flex-col items-center gap-8 px-8">
+          <h1 id="pre-word" class="font-display text-[90px] sm:text-[140px] md:text-[180px] font-bold leading-none tracking-[-0.02em] m-0"
+              style="-webkit-text-stroke: 2px var(--color-accent); color: transparent;">
+            {site.introText}
+          </h1>
+          <span id="pre-dot" class="w-2.5 h-2.5 rounded-full border-2 border-accent"></span>
         </div>
-        <div class="w-full h-[1px] bg-border overflow-hidden" style="width:min(480px,80vw)">
-          <div id="pre-bar" class="h-full bg-accent transition-none" style="width:0%"></div>
+      ) : (
+        <div class="flex flex-col items-start gap-6 px-8">
+          <p id="pre-label" class="font-mono text-[11px] tracking-[0.2em] uppercase text-ink-tertiary">
+            Deneyim hazırlanıyor
+          </p>
+          <div class="flex items-end gap-3">
+            <span id="pre-count" class="font-display text-[80px] sm:text-[120px] font-bold text-ink leading-none tracking-[-0.03em]">00</span>
+            <span class="font-display text-[40px] sm:text-[60px] font-bold text-accent leading-[1.2] mb-1">%</span>
+          </div>
+          <div class="w-full h-[1px] bg-border overflow-hidden" style="width:min(480px,80vw)">
+            <div id="pre-bar" class="h-full bg-accent transition-none" style="width:0%"></div>
+          </div>
         </div>
-      </div>
+      )}
     </div>
 
     <div id="page-content" style="opacity:0">
@@ -271,8 +281,9 @@ const themeCss = site.theme ? `
         const seen   = sessionStorage.getItem('intro-seen');
         const loader = document.getElementById('preloader') as HTMLElement;
         const page   = document.getElementById('page-content') as HTMLElement;
-        const count  = document.getElementById('pre-count') as HTMLElement;
-        const bar    = document.getElementById('pre-bar') as HTMLElement;
+        const word   = document.getElementById('pre-word') as HTMLElement | null;
+        const count  = document.getElementById('pre-count') as HTMLElement | null;
+        const bar    = document.getElementById('pre-bar') as HTMLElement | null;
 
         if (!isHome || seen || !loader) {
           // Alt sayfalar veya tekrar ziyaret: direkt göster
@@ -284,6 +295,29 @@ const themeCss = site.theme ? `
         // İlk ziyaret, ana sayfa: preloader'ı göster
         loader.style.cssText = '';
         page.style.opacity = '0';
+
+        function exit() {
+          sessionStorage.setItem('intro-seen', '1');
+          setTimeout(() => {
+            loader.style.transition = 'transform 0.7s cubic-bezier(0.76,0,0.24,1), opacity 0.5s ease';
+            loader.style.transform  = 'translateY(-100%)';
+            loader.style.opacity    = '0';
+            page.style.transition   = 'opacity 0.5s ease 0.3s';
+            page.style.opacity      = '1';
+            setTimeout(() => loader.remove(), 800);
+          }, 200);
+        }
+
+        if (word) {
+          // Kelime çizim animasyonu (ör. "BIM")
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            word.classList.add('reveal-word');
+          }));
+          setTimeout(exit, 1600);
+          return;
+        }
+
+        if (!count || !bar) { exit(); return; }
 
         let current = 0;
         const total = 100;
@@ -298,17 +332,7 @@ const themeCss = site.theme ? `
 
           if (current >= total) {
             clearInterval(timer);
-            sessionStorage.setItem('intro-seen', '1');
-
-            // Kısa bekleme sonrası yukarı kayarak çıkış
-            setTimeout(() => {
-              loader.style.transition = 'transform 0.7s cubic-bezier(0.76,0,0.24,1), opacity 0.5s ease';
-              loader.style.transform  = 'translateY(-100%)';
-              loader.style.opacity    = '0';
-              page.style.transition   = 'opacity 0.5s ease 0.3s';
-              page.style.opacity      = '1';
-              setTimeout(() => loader.remove(), 800);
-            }, 200);
+            exit();
           }
         }, interval);
       })();

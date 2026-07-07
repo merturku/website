@@ -1,0 +1,43 @@
+---
+import { load, LI, liSrc } from '../lib/data';
+const consulting = load('consulting.yaml');
+const site = load('site.yaml');
+const linkedin = (site.social || []).find((s: any) => s.label === 'LinkedIn');
+---
+{consulting.headline && (
+  <section class="px-5 md:px-6 pb-8 md:pb-16">
+    <div class="max-w-[1100px] mx-auto">
+      <div class="reveal bg-[#14171F] text-white rounded-[16px] p-8 md:p-14">
+        {consulting.eyebrow && (
+          <p class="inline-flex items-center gap-2 text-[13px] font-mono tracking-[0.12em] uppercase text-white/60 mb-5">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent-light inline-block"></span>
+            {consulting.eyebrow}
+          </p>
+        )}
+        {consulting.headline && (
+          <h2 class="font-display text-[30px] md:text-[46px] font-bold leading-[1.15] tracking-[-0.02em] max-w-[620px] m-0 mb-5">
+            {consulting.headline}
+          </h2>
+        )}
+        {consulting.description && (
+          <p class="text-[16px] md:text-[18px] text-white/70 leading-[1.7] max-w-[520px] m-0 mb-8">
+            {consulting.description}
+          </p>
+        )}
+        <div class="flex flex-col sm:flex-row gap-3">
+          {consulting.cta && (
+            <a href={consulting.cta.href} class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-ink-on-dark text-[15px] sm:text-[16px] font-medium rounded-[6px] hover:bg-accent-light transition-all duration-200 no-underline">
+              {consulting.cta.label}
+            </a>
+          )}
+          {linkedin && (
+            <a href={linkedin.url} target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white/20 text-white text-[15px] sm:text-[16px] font-medium rounded-[6px] hover:border-white/40 transition-all no-underline">
+              {linkedin.icon && <lord-icon src={liSrc(linkedin.icon)} trigger="morph" colors={LI.light} class="li-md"></lord-icon>}
+              {linkedin.label}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
+)}

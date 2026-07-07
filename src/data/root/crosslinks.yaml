@@ -1,0 +1,8 @@
+heading: "Diğer Uzmanlık Alanlarım"
+items:
+  - label: "iOS Developer"
+    description: "SwiftUI ile mobil uygulama geliştirme"
+    url: "https://app.merturku.com"
+  - label: "BIM Uzmanı"
+    description: "İnşaat sektöründe BIM danışmanlığı ve şantiye yönetimi"
+    url: "https://bim.merturku.com"
