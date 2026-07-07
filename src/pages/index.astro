@@ -29,11 +29,11 @@ const contact = load('contact.yaml');
   {(hero.name || hero.subtitle) && <Hero />}
   {consulting.headline && <Consulting />}
   {(about.paragraphs || about.stats) && <About />}
-  {experience.jobs?.length && <Experience />}
-  {projects.items?.length && <Projects />}
-  {skills.categories?.length && <Skills />}
-  {(education.degree || education.highlights?.length) && <Education />}
-  {crosslinks.items?.length && <CrossLinks />}
+  {(experience.jobs?.length ?? 0) > 0 && <Experience />}
+  {(projects.items?.length ?? 0) > 0 && <Projects />}
+  {(skills.categories?.length ?? 0) > 0 && <Skills />}
+  {(education.degree || (education.highlights?.length ?? 0) > 0) && <Education />}
+  {(crosslinks.items?.length ?? 0) > 0 && <CrossLinks />}
   {(contact.heading || site.email) && <Contact />}
   <Footer />
 </BaseLayout>
