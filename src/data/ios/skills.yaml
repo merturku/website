@@ -25,17 +25,6 @@ categories:
       - TestFlight
       - App Store Connect
 
-  - name: "BIM & İnşaat"
-    icon: "kikjlzqr"
-    items:
-      - Revit
-      - AutoCAD
-      - Navisworks
-      - BIM 360
-      - MS Project
-      - Tekla
-      - Dynamo
-
   - name: "Web & Diğer"
     icon: "xqdfobxg"
     items:

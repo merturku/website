@@ -9,12 +9,12 @@ highlights:
   - text: "BIM Uzmanlık Sertifikası - Autodesk"
     icon: "lewtedlh"
     featured: true
-  - text: "iOS Geliştirme "
-    icon: "zpxybbhl"
-    featured: true
   - text: "Revit MEP Eğitimi"
     icon: "qhgmphtg"
-    featured: false
+    featured: true
   - text: "Şantiye Yönetimi Sertifikası"
     icon: "rrbmabsx"
+    featured: false
+  - text: "iOS Geliştirme"
+    icon: "zpxybbhl"
     featured: false

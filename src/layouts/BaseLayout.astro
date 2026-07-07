@@ -15,6 +15,21 @@ const hero = load('hero.yaml');
 const education = load('education.yaml');
 
 const ogImageUrl = site.ogImage ? new URL(site.ogImage, Astro.site).toString() : undefined;
+
+const themeCss = site.theme ? `
+  html:root {
+    --color-accent: ${site.theme.light.accent};
+    --color-accent-light: ${site.theme.light.accentLight};
+    --color-accent-dark: ${site.theme.light.accentDark};
+    --color-accent-wash: ${site.theme.light.accentWash};
+  }
+  html.dark {
+    --color-accent: ${site.theme.dark.accent};
+    --color-accent-light: ${site.theme.dark.accentLight};
+    --color-accent-dark: ${site.theme.dark.accentDark};
+    --color-accent-wash: ${site.theme.dark.accentWash};
+  }
+` : '';
 ---
 <!DOCTYPE html>
 <html lang={site.lang || "en"}>
@@ -27,6 +42,7 @@ const ogImageUrl = site.ogImage ? new URL(site.ogImage, Astro.site).toString() :
     <meta name="generator" content={Astro.generator} />
     <meta name="color-scheme" content="light dark" />
     {site.themeColor && <meta name="theme-color" content={site.themeColor} />}
+    {themeCss && <style set:html={themeCss} />}
 
     <!-- Prevent flash of wrong theme -->
     <script is:inline>

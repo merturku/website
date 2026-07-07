@@ -1,0 +1,18 @@
+label: "01 // HAKKIMDA"
+heading: "İnşaat projelerinde dijital dönüşümü yönetiyorum"
+
+paragraphs:
+  - 'BIM Uzmanı ve Şantiye Yöneticisi olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. 2015''ten bu yana büyük ölçekli inşaat projelerinde Revit MEP ile mekanik, elektrik ve tesisat koordinasyonu yürütüyor, dijital dönüşüm süreçlerinde teknik liderlik üstleniyorum.'
+  - 'Sahada edindiğim disiplin — çok paydaşlı süreçleri koordine etmek, milimetrik hata payıyla çalışmak, büyük bütçeli projelerde uçtan uca sorumluluk almak — yazılım geliştirme tarafımdan (SwiftUI ile iOS uygulamaları) gelen sistemli, süreç odaklı bir bakış açısıyla besleniyor.'
+  - 'Revit, AutoCAD, Navisworks ve BIM 360 gibi araçlarla koordinasyon modelleri oluşturuyor, çakışma tespiti (clash detection) yapıyor ve saha ekipleriyle senkronize çalışan dijital süreçler kuruyorum.'
+
+stats:
+  - value: "10+"
+    label: "Yıl İnşaat Sektörü Deneyimi"
+    icon: "kbtmbyzy"
+  - value: "BIM"
+    label: "Revit MEP & Koordinasyon"
+    icon: "yvjimpju"
+  - value: "iOS"
+    label: "SwiftUI Geliştirme"
+    icon: "vbmtnozn"

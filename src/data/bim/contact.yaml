@@ -1,0 +1,9 @@
+label: "06 // İLETİŞİM"
+heading: "Birlikte bir şeyler üretelim."
+description: "BIM danışmanlığı, şantiye yönetimi veya dijital dönüşüm projeleri hakkında konuşmaya her zaman açığım."
+emailIcon: "ozlkyfxg"
+
+footer:
+  copyright: '2026 Mehmet Ertürk Uludaşdemir. <a href="https://astro.build" target="_blank" rel="noopener" class="text-ink-tertiary hover:text-accent transition-colors no-underline dark:text-ink-tertiary">Astro</a> ile geliştirildi.'
+  iconsAttribution: "Lordicon"
+  iconsUrl: "https://lordicon.com/"

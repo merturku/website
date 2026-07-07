@@ -1,0 +1,21 @@
+label: "04 // BECERİLER"
+heading: "Teknoloji ve Araçlar"
+
+categories:
+  - name: "BIM & İnşaat"
+    icon: "kikjlzqr"
+    items:
+      - Revit
+      - AutoCAD
+      - Navisworks
+      - BIM 360
+      - MS Project
+      - Tekla
+      - Dynamo
+
+  - name: "Yazılım Geliştirme"
+    icon: "lzgmgrnn"
+    items:
+      - SwiftUI
+      - Swift
+      - Astro

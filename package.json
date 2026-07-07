@@ -15,6 +15,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:ios": "SITE_VARIANT=ios SITE_URL=https://app.merturku.com astro build",
+    "build:bim": "SITE_VARIANT=bim SITE_URL=https://bim.merturku.com astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

@@ -1,0 +1,17 @@
+subtitle: "BIM UZMANI & ŞANTİYE YÖNETİCİSİ"
+name: "MEHMET ERTÜRK"
+icon: "srupsmbe"
+description: "Revit MEP ile büyük ölçekli inşaat projelerinde teknik koordinasyon ve dijital dönüşüm süreçlerini yönetiyorum. 2015'ten bu yana BIM Uzmanı ve Şantiye Yöneticisi olarak sahada ve masabaşında uçtan uca sorumluluk üstleniyorum."
+
+cta:
+  viewWork:
+    label: "Deneyimimi Gör"
+    href: "#experience"
+    icon: "zhiiqoue"
+  getInTouch:
+    label: "İletişime Geç"
+    href: "#contact"
+    icon: "vcdutftw"
+  downloadCV:
+    label: "CV"
+    href: "/cv"

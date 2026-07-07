@@ -2,7 +2,8 @@ import yaml from 'js-yaml';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const dataDir = path.join(process.cwd(), 'src/data');
+const variant = process.env.SITE_VARIANT || 'ios';
+const dataDir = path.join(process.cwd(), 'src/data', variant);
 
 export function load(file: string): any {
   const filePath = path.join(dataDir, file);

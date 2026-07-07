@@ -1,0 +1,15 @@
+label: "02 // DENEYİM"
+heading: "Profesyonel Yolculuk"
+
+jobs:
+  - company: "İnşaat Sektörü"
+    role: "BIM Uzmanı & Şantiye Yöneticisi"
+    location: "Ankara, Türkiye"
+    dateRange: "2015 &ndash; Devam ediyor"
+    description: "Büyük ölçekli inşaat projelerinde BIM (Building Information Modeling) uzmanı ve şantiye yöneticisi olarak görev yapıyorum. Revit MEP ile mekanik, elektrik ve tesisat projelerini koordine ediyorum. Dijital dönüşüm süreçlerinde teknik liderlik üstlendim."
+    tech:
+      - Revit
+      - AutoCAD
+      - BIM 360
+      - Navisworks
+      - MS Project

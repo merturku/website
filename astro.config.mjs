@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://merturku.com',
+  site: process.env.SITE_URL || 'https://merturku.com',
   output: 'static',
   integrations: [sitemap()],
   vite: {

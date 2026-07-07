@@ -1,0 +1,13 @@
+label: "03 // PROJELER"
+heading: "Proje Deneyimi"
+
+statuses:
+  - label: "Tümü"
+  - label: "Tamamlandı"
+    color: "#2D8A56"
+  - label: "Devam Ediyor"
+    color: "#2E5090"
+  - label: "Arşiv"
+    color: "#6B7280"
+
+items: []
