@@ -5,6 +5,7 @@ email: "erturkuludasdemir@gmail.com"
 lang: "tr"
 ogImage: "/og.png"
 themeColor: "#2E5090"
+introText: "iOS"
 
 theme:
   light:

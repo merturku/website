@@ -2,11 +2,11 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
-import { load } from '../../lib/data';
+import { load, blogCategory } from '../../lib/data';
 
 const site = load('site.yaml');
 const posts = (await getCollection('blog'))
-  .filter(p => !p.data.draft)
+  .filter(p => !p.data.draft && p.data.category === blogCategory)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
@@ -17,7 +17,7 @@ const posts = (await getCollection('blog'))
     <div class="max-w-[780px] mx-auto md:mx-0 md:ml-[max(calc((100%-1100px)/2),2rem)]">
       <p class="text-[13px] md:text-[15px] font-mono text-accent tracking-[0.12em] uppercase mb-4 md:mb-5">Yazılar</p>
       <h1 class="font-display text-[42px] sm:text-[52px] md:text-[76px] lg:text-[90px] font-bold text-ink leading-[1.05] tracking-[-0.02em] mb-5 md:mb-7">Blog</h1>
-      <p class="text-[17px] md:text-[20px] text-ink-secondary leading-[1.7] max-w-[580px]">iOS geliştirme, BIM ve teknoloji üzerine yazılar.</p>
+      <p class="text-[17px] md:text-[20px] text-ink-secondary leading-[1.7] max-w-[580px]">{blogCategory === 'bim' ? 'BIM, Revit MEP ve mekanik tesisat koordinasyonu üzerine yazılar.' : 'iOS geliştirme ve yazılım üzerine yazılar.'}</p>
     </div>
   </section>
 

@@ -2,10 +2,10 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
-import { load } from '../../lib/data';
+import { load, blogCategory } from '../../lib/data';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = (await getCollection('blog')).filter(p => !p.data.draft && p.data.category === blogCategory);
   return posts.map(post => ({
     params: { slug: post.id },
     props: { post },
@@ -19,10 +19,16 @@ const site = load('site.yaml');
 const wordCount = (post.body ?? '').split(/\s+/).length;
 const readTime = Math.ceil(wordCount / 200);
 const formattedDate = post.data.date.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' });
-const postUrl = `https://merturku.com/blog/${post.id}`;
+const postUrl = new URL(`/blog/${post.id}`, Astro.site).toString();
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description}>
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  publishedTime={post.data.date.toISOString()}
+  keywords={post.data.tags}
+>
   <Navbar />
   <main class="max-w-[720px] mx-auto px-6 py-20">
 

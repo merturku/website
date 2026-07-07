@@ -5,9 +5,12 @@ import { load } from '../lib/data';
 interface Props {
   title: string;
   description: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  keywords?: string[];
 }
 
-const { title, description } = Astro.props;
+const { title, description, type = 'website', publishedTime, keywords } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 
 const site = load('site.yaml');
@@ -69,9 +72,10 @@ const themeCss = site.theme ? `
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:site_name" content={site.fullName || site.name} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    {type === 'article' && publishedTime && <meta property="article:published_time" content={publishedTime} />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content={ogImageUrl ? "summary_large_image" : "summary"} />
@@ -79,17 +83,31 @@ const themeCss = site.theme ? `
     <meta name="twitter:description" content={description} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
 
+    {keywords && keywords.length > 0 && <meta name="keywords" content={keywords.join(', ')} />}
+
     <!-- JSON-LD -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": site.fullName || site.name,
-      "url": Astro.site?.toString() || "",
-      "jobTitle": hero.subtitle,
-      "email": site.email ? `mailto:${site.email}` : undefined,
-      "alumniOf": education.institution ? { "@type": "CollegeOrUniversity", "name": education.institution } : undefined,
-      "sameAs": (site.social || []).map((s: any) => s.url).filter(Boolean)
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(
+      type === 'article' ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": title,
+        "description": description,
+        "datePublished": publishedTime,
+        "url": canonicalUrl.toString(),
+        "keywords": keywords?.join(', '),
+        "author": { "@type": "Person", "name": site.fullName || site.name },
+        "publisher": { "@type": "Person", "name": site.fullName || site.name }
+      } : {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": site.fullName || site.name,
+        "url": Astro.site?.toString() || "",
+        "jobTitle": hero.subtitle,
+        "email": site.email ? `mailto:${site.email}` : undefined,
+        "alumniOf": education.institution ? { "@type": "CollegeOrUniversity", "name": education.institution } : undefined,
+        "sameAs": (site.social || []).map((s: any) => s.url).filter(Boolean)
+      }
+    )} />
 
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/?$/, '/')}favicon.svg`} />
   </head>
