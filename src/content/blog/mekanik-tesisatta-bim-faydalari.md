@@ -46,6 +46,16 @@ Elbette her şey pürüzsüz ilerlemiyor. Mekanik tesisat BIM sürecinde en sık
 - **Yazılım/format uyumsuzlukları:** Farklı yazılımlar (Revit, Tekla, AutoCAD MEP) arasında dosya alışverişinde veri kaybı yaşanabiliyor.
 - **Ekip yetkinliği:** BIM araçlarını iyi bilmeyen personel, modelin potansiyelini tam kullanamıyor.
 
+## LOD Seviyesinin Fayda Üzerindeki Etkisi
+
+Mekanik tesisat modelinin ne kadar fayda sağlayacağı, büyük ölçüde doğru LOD (Level of Development) seviyesinde modellenmiş olmasına bağlı. Tasarım aşamasının başında LOD 200-300 civarında bir detay yeterliyken, imalat ve montaj aşamasına geçildiğinde LOD 350-400 seviyesinde, gerçek çap ve bağlantı elemanlarını içeren bir model gerekiyor. Sahada sıkça karşılaştığım sorun, tasarım aşamasında hazırlanmış düşük detaylı bir modelin doğrudan imalat için kullanılmaya çalışılması; bu durumda model, gerçekte olmayan boşlukları "varmış gibi" gösterip yanlış güven duygusu yaratabiliyor.
+
+Bu yüzden proje başında hangi aşamada hangi LOD seviyesinin bekleneceğini netleştirmek, BIM'in faydalarını gerçekçi şekilde almak için şart. Bu konuyu ayrı bir yazıda, mekanik tesisat özelinde LOD seviyelerini karşılaştırarak daha detaylı ele alacağım.
+
+## Ekip İşbirliği ve Sorumluluk Dağılımı
+
+BIM'in faydalarının ortaya çıkması için sadece doğru yazılım yeterli değil; ekip içi sorumlulukların net tanımlanması da gerekiyor. Kimin hangi sistemi modelleyeceği, kimin çakışma raporlarını takip edeceği, kimin saha revizyonlarını modele işleyeceği baştan belirlenmezse, model kısa sürede güncelliğini yitiriyor. Deneyimlerimde, mekanik tesisat BIM koordinatörü rolünün net tanımlandığı projelerde süreç çok daha akıcı ilerliyor; bu rol olmadan model genellikle "kimsenin sahiplenmediği" bir dokümana dönüşüyor.
+
 ## Pratik Öneriler
 
 Mekanik tesisat projelerinde BIM'den maksimum fayda sağlamak isteyenler için önerilerim:

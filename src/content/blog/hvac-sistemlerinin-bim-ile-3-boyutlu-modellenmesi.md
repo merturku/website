@@ -55,6 +55,16 @@ HVAC modellemesinde en sık karşılaştığım zorluklar şunlar:
 - **Ekipman verilerinin eksikliği:** Üretici firma verileri (debi, basınç, boyut) modele tam yansıtılmazsa, hesaplar gerçek performansı yansıtmıyor.
 - **Model güncelliği:** Saha revizyonları modele işlenmezse, as-built model gerçek durumu yansıtmıyor.
 
+## Proje Tipine Göre Modelleme Yaklaşımı
+
+HVAC modellemesi, proje tipine göre farklı önceliklere sahip. Konut projelerinde genellikle daha küçük çaplı, düşük debili sistemler söz konusu olduğu için modelleme nispeten daha basit ilerliyor; buradaki asıl zorluk daire içi estetik kısıtlamalar ve düşük tavan yüksekliği. Ticari ofis projelerinde ise açık ofis alanlarının büyük kesitli ana dağıtım kanalları gerektirmesi nedeniyle asma tavan koordinasyonu daha kritik hale geliyor. Hastane ve laboratuvar gibi özel havalandırma gereksinimi olan yapılarda ise basınç kademelendirmesi, hava değişim oranları gibi ek mühendislik kriterleri modele dahil edilmeli; bu tür projelerde HVAC modellemesi diğer bina tiplerine göre çok daha fazla detay ve doğrulama gerektiriyor.
+
+Sahada gördüğüm kadarıyla, proje tipine göre modelleme önceliklerini baştan netleştirmemek, ilerleyen aşamalarda gereksiz revizyonlara yol açıyor. Örneğin bir hastane projesinde estetik kaygılarla değil, hijyen ve basınç gereksinimleriyle başlamak gerekiyor.
+
+## İşletme Dönemine Hazırlık
+
+HVAC modelinin sadece inşaat aşamasında değil, binanın işletme döneminde de değerli olması için model içindeki verilerin doğru ve güncel tutulması gerekiyor. Ekipmanların seri numaraları, bakım periyotları, filtre değişim aralıkları gibi bilgiler modele işlenirse, teslim sonrası facility management ekipleri bu veriyi doğrudan kullanabiliyor. Deneyimlerimde, bu tür işletme verilerinin tasarım aşamasında ihmal edilip sonradan eklenmeye çalışılması, ciddi bir veri toplama yükü doğuruyor; bu yüzden mümkünse baştan itibaren ekipman parametrelerini eksiksiz tanımlamak çok daha verimli oluyor.
+
 ## Pratik Öneriler
 
 HVAC sistemlerinin BIM ile 3 boyutlu modellenmesinde dikkat edilmesi gereken temel noktalar:

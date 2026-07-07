@@ -39,6 +39,12 @@ BIM 360 ile çalışmanın bana kattığı en önemli alışkanlıklardan biri, 
 
 Elbette BIM 360'ın da şantiye şartlarında karşılaştığı pratik zorluklar var. Şantiye sahasında internet erişiminin zayıf olduğu bölgelerde mobil uygulamanın senkronizasyonu yavaşlayabiliyor. Ayrıca saha personelinin dijital araçlara alışkın olmaması, ilk aylarda eğitim ihtiyacını artırıyor. Benim önerim, projeye başlarken tüm taşeron ekiplerine kısa ama uygulamalı bir BIM 360 eğitimi vermek ve sahada en az bir "dijital koordinatör" görevlendirmek. Bu kişi, saha ekiplerinin platformu doğru kullanmasını sağlıyor ve teknik sorunları hızlıca çözüyor.
 
+Bir diğer zorluk, projeye dahil olan farklı taşeron firmaların kendi iç süreçlerinde farklı yazılımlar kullanmaya alışkın olması. Örneğin mekanik tesisat taşeronu kendi ölçüm ve keşif çalışmalarını halen kağıt üzerinde veya basit ofis yazılımlarıyla yürütüyor olabiliyor. Bu durumda BIM 360'a geçiş sadece teknik bir değişiklik değil, aynı zamanda kültürel bir değişiklik gerektiriyor. Şantiye yönetimi olarak bu geçişi zorlamak yerine, ilk birkaç haftada paralel süreç yürütüp (hem eski yöntem hem BIM 360) ekiplerin platforma güvenini kazanmasını bekliyorum. Güven oluştuktan sonra eski yöntemden vazgeçiş kendiliğinden gerçekleşiyor.
+
+## Maliyet ve Zaman Kazanımının Somutlaştırılması
+
+Yönetim kademesine BIM 360 gibi bir platforma yatırım yapmanın gerekçesini anlatırken en çok işe yarayan yaklaşım, somut örnekler üzerinden gitmek oldu. Örneğin bir çakışmanın imalat öncesinde tespit edilmesi ile imalat sonrasında sahada fark edilmesi arasındaki maliyet farkı çoğu zaman kat kat büyük oluyor; sökme, yeniden üretim, işçilik kaybı ve program gecikmesi gibi kalemler devreye giriyor. Bulut tabanlı koordinasyon sayesinde bu tür sorunların büyük kısmı imalat başlamadan çözüldüğü için, platform maliyeti kısa sürede kendini amorti ediyor. Bu tür kazanımları proje sonunda rakamsallaştırmak yerine, süreç içinde issue tracking kayıtları üzerinden örnek vakalarla göstermek, yönetim ekiplerini ikna etmek açısından daha etkili oluyor.
+
 ## Sonuç
 
 BIM 360 ile şantiyede mekanik tesisat koordinasyonu kurmak, başlangıçta ek bir iş yükü gibi görünse de orta ve uzun vadede hem zaman hem maliyet açısından ciddi kazanım sağlıyor. Pratik önerilerim şöyle:

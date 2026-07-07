@@ -40,6 +40,16 @@ Ayrıca hidrolik hesap yazılımlarıyla BIM modeli arasında veri alışverişi
 
 Model üzerinde koordineli görünen bir yangın tesisatı, sahada hâlâ sorun çıkarabiliyor. En sık gördüğüm durum, asma tavan uygulama toleransları ile model kotlarının tam örtüşmemesi. Bu yüzden özellikle kritik bölgelerde (yüksek tavanlı hacimler, atriyum çevreleri, otopark gibi geniş açıklıklı alanlar) sahaya çıkmadan önce mock-up yapılmasını öneriyorum. Böylece hem montaj ekibi güzergahı netleştiriyor hem de olası bir sorun, tüm kata yayılmadan tek bir noktada tespit edilebiliyor.
 
+## Farklı Sistem Tiplerinde Koordinasyon Farkları
+
+Islak borulu sprinkler sistemleri ile kuru borulu ya da ön tepkimeli (pre-action) sistemler arasında koordinasyon açısından da farklar var. Kuru borulu sistemlerde boru içindeki suyun tamamen boşalabilmesi için belirli bir eğim zorunluluğu bulunuyor; bu eğim, modelde diğer disiplinlerle çakışma kontrolü yapılırken mutlaka dikkate alınmalı. Sahada gördüğüm bir hata, eğimli güzergahın modelde düz gösterilmesi ve saha ekibinin bu eğimi sonradan kendi inisiyatifiyle uygulamaya çalışması; bu da genelde asma tavan kotlarıyla çakışan noktalar doğuruyor. Ön tepkimeli sistemlerde ise ek olarak dedektör ve kontrol paneli bağlantılarının, elektrik ve otomasyon sistemleriyle koordinasyonu gerekiyor; bu da yangın tesisatı koordinasyonunu tek başına mekanik bir konu olmaktan çıkarıp elektrik ve zayıf akım disiplinleriyle ortak yürütülmesi gereken bir sürece dönüştürüyor.
+
+Depo, otopark, atriyum gibi özel kullanım alanlarında ise sprinkler yoğunluğu ve başlık tipi standart ofis alanlarından farklı olabiliyor. Bu tür özel alanlarda yönetmelik gereksinimlerinin proje başında netleştirilmemesi, modelleme ilerledikçe tüm bölgenin yeniden ele alınmasını gerektirebiliyor. Bu yüzden proje başında hangi hacimlerin "özel tehlike sınıfı" kapsamına girdiğini belirlemek, modelleme stratejisinin doğru kurgulanması açısından kritik bir adım.
+
+## Model Doğrulama ve Onay Süreci
+
+Yangın tesisatı modelinin itfaiye ya da ilgili yerel otorite tarafından onaylanması gereken projelerde, model çıktısının onay sürecine uygun formatta hazırlanması da ayrı bir konu. Genelde onay makamları 3D model değil, 2D kesit ve plan çıktıları talep ediyor; bu yüzden modelden türetilen 2D çizimlerin, model ile birebir tutarlı olduğundan emin olmak gerekiyor. Sahada birkaç kez, model üzerinde revize edilen bir güzergahın 2D çıktıya yansıtılmadığı ve onay sürecinde bu tutarsızlığın fark edilmesiyle zaman kaybedildiği durumlar yaşadım. Bu yüzden onay öncesi son bir kontrol adımı olarak, model ile 2D çıktıların karşılaştırılmasını iş akışına dahil ediyorum.
+
 ## Sonuç ve Pratik Öneriler
 
 Yangın tesisatı sprinkler sistemlerinin BIM koordinasyonu, diğer mekanik disiplinlere göre daha az esneklik tanıyan, yönetmelik odaklı bir süreç. Bu alanda pratik önerilerim şöyle:

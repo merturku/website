@@ -39,6 +39,12 @@ Navisworks'ün sadece çakışma tespiti değil, aynı zamanda TimeLiner ve Anim
 
 En sık karşılaştığım zorluk, disiplinlerin model teslim tarihlerinin senkronize olmaması. Mekanik tesisat modeli güncel olsa da statik model iki hafta gecikmeli geldiğinde, koordinasyon toplantısı güncel olmayan veriyle yürütülmek zorunda kalabiliyor. Bunu önlemek için proje başında tüm disiplinlerle ortak bir model teslim takvimi (BIM uygulama planı kapsamında) belirlemek kritik önem taşıyor.
 
+Bir diğer sık karşılaşılan sorun, çakışma testlerinin gereğinden fazla sonuç üretmesi. Ayarları gevşek bırakılan bir Clash Detective testi, aynı boru güzergahı ile aynı askı arasında yüzlerce tekrar eden "sahte" çakışma raporu üretebiliyor. Bu durumda gerçekten kritik olan çakışmalar, gürültü içinde kayboluyor. Bu yüzden test kurallarını (tolerans mesafesi, hangi kategorilerin birbirine karşı test edileceği) proje başında dikkatli tanımlamak, koordinasyon ekibinin zamanını gerçek sorunlara ayırabilmesi için şart.
+
+## Raporlama ve Takip Alışkanlıkları
+
+Navisworks üzerinden çıkarılan çakışma raporlarını sadece toplantıda göstermek yeterli değil; bu raporların proje yönetim sistemine (ister BIM 360 ister başka bir platform olsun) aktarılıp, çözüm sürecinin takip edilmesi gerekiyor. Ben her koordinasyon toplantısı sonunda güncellenmiş bir "açık çakışma listesi" paylaşıyorum ve bir sonraki toplantıda önce bu listenin durumu gözden geçiriliyor. Bu basit alışkanlık, çözülmeden unutulan çakışmaların sahada sürpriz olarak ortaya çıkmasını önlüyor ve tüm disiplinlerin sorumluluğunu görünür kılıyor.
+
 ## Sonuç ve Pratik Öneriler
 
 Navisworks ile çok disiplinli koordinasyon sürecini sağlıklı yürütmek için önerilerim:

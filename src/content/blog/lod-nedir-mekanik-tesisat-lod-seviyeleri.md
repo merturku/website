@@ -43,6 +43,12 @@ Bir projeye başlarken LOD gereksinimlerinin hangi aşamada hangi seviyede olmas
 
 LOD kavramıyla ilgili en sık karşılaştığım yanlış anlama, LOD seviyesinin sadece görsel detayla eşitlenmesi. Oysa bir elemanın görsel olarak çok detaylı görünmesi, onun LOD açısından yüksek seviyede olduğu anlamına gelmiyor; asıl belirleyici olan, o elemana ait verinin (malzeme, kapasite, üretici, bakım bilgisi) ne kadar olgunlaştığı. Bu yüzden taşeron ve modelleme ekipleriyle LOD tartışırken her zaman hem geometri hem veri boyutunu birlikte ele almaya özen gösteriyorum.
 
+Bir başka yaygın yanlış anlama, tüm proje elemanlarının aynı LOD seviyesinde olması gerektiği varsayımı. Gerçekte bir projenin farklı bölümleri, farklı LOD seviyelerinde ilerleyebilir. Örneğin bir binanın ana mekanik odası LOD 400 seviyesinde detaylandırılırken, henüz kesinleşmemiş bir tadilat alanındaki tesisat LOD 200 seviyesinde kalabilir. Bu yüzden LOD gereksinimlerini proje geneli için tek bir sayı olarak değil, eleman kategorisi ve proje bölgesi bazında tanımlamak çok daha sağlıklı bir yaklaşım.
+
+## Şartname ve Sözleşmelerde LOD'un Yeri
+
+LOD gereksinimlerinin sadece teknik bir tercih değil, aynı zamanda sözleşmesel bir konu olduğunu da vurgulamak isterim. Hangi disiplinin hangi aşamada hangi LOD seviyesinde teslim yapacağı, mekanik tesisat şartnamelerinde net şekilde tanımlanmadığında, taraflar arasında "bu detay bizim işimiz değildi" tartışmaları çıkabiliyor. Bu konuyu [Mekanik Tesisat Şartnamelerinde BIM Gereksinimleri](/blog/mekanik-tesisat-sartnamelerinde-bim-gereksinimleri) yazımda daha kapsamlı ele alıyorum; ancak burada kısaca belirtmek gerekirse, LOD tanımlarının şartnameye somut ve ölçülebilir şekilde yazılması, proje sonunda yaşanacak birçok anlaşmazlığı baştan önlüyor.
+
 ## Sonuç ve Pratik Öneriler
 
 LOD, mekanik tesisat projelerinde ekipler arası beklenti uyuşmazlıklarını önlemenin en etkili araçlarından biri. Pratik önerilerim:

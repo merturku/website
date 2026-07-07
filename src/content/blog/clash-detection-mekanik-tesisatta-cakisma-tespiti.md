@@ -54,6 +54,16 @@ Sahada bir çakışmanın fark edilmesi ile tasarım aşamasında fark edilmesi 
 
 Bu nedenle clash detection sürecini "bir kere yapılıp geçilecek kontrol" olarak değil, proje boyunca sürekli işleyen bir kalite güvence mekanizması olarak görmek gerekiyor.
 
+## Çakışmaların Önceliklendirilmesi
+
+Büyük bir projede tek bir clash detection turunda yüzlerce, hatta binlerce çakışma raporu çıkabiliyor. Bunların hepsini aynı önem düzeyinde ele almaya çalışmak ekibi yorar ve gerçekten kritik olan çakışmaların gözden kaçmasına yol açar. Bu yüzden çakışmaları önceliklendirmek gerekiyor. Ben genellikle şu sıralamayı izliyorum: önce yapısal elemanlarla (kiriş, kolon, perde) olan sert çakışmalar, ardından ana dağıtım hatları (ana kanal, ana kolektör) arasındaki çakışmalar, en son da küçük çaplı dallanma hatlarındaki çakışmalar ele alınıyor. Bu sıralama, en çok emek ve zaman gerektiren düzeltmelerin erken aşamada çözülmesini sağlıyor.
+
+Ayrıca her çakışmanın "gerçek" mi yoksa "modelleme hatası" mı olduğunu ayırt etmek de önemli. Bazen iki eleman modelde çakışıyor gibi görünse de, aslında biri yanlış yerleştirilmiş placeholder bir nesnedir; bu tür sahte çakışmalar raporları şişirip asıl önemli konuların gözden kaçmasına neden olabiliyor.
+
+## Raporlama ve Takip Araçları
+
+Çakışma raporlarının etkili takibi için sadece Navisworks'ün kendi rapor formatları değil, genellikle Excel tabanlı takip tabloları ya da BIM 360 üzerindeki sorun (issue) takip modülleri de kullanılıyor. Her çakışmaya bir kimlik numarası, sorumlu disiplin, açılış tarihi ve hedef kapanış tarihi atanması, projenin ilerleyen aşamalarında hangi konuların tekrarlayan sorun haline geldiğini görmeyi kolaylaştırıyor. Deneyimlerimde, bu tür sistematik takip yapılmayan projelerde aynı çakışmaların defalarca farklı isimlerle yeniden raporlandığını görüyorum; bu da ekip için gereksiz bir zaman kaybı oluyor.
+
 ## Pratik Öneriler
 
 Clash detection sürecini etkili yürütmek isteyenler için önerilerim:

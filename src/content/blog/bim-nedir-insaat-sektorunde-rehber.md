@@ -45,6 +45,16 @@ Benim uzmanlık alanım olan mekanik tesisat (HVAC, sıhhi tesisat, yangın tesi
 
 Revit MEP gibi araçlarla yapılan modellemede, sistemlerin parametrik olarak tanımlanması sayesinde debi hesapları, boyutlandırma ve enerji analizleri de model üzerinden otomatik olarak türetilebiliyor. Bu da hem tasarım hem de saha uygulama sürecini büyük ölçüde hızlandırıyor.
 
+## BIM Olgunluk Seviyeleri
+
+BIM'i tek bir seviyeymiş gibi düşünmek yaygın bir hata. Sektörde genellikle Seviye 0'dan Seviye 3'e uzanan bir olgunluk skalasından bahsedilir. Seviye 0, klasik 2D CAD çizimini ifade eder; henüz gerçek anlamda bir bilgi modeli yoktur. Seviye 1'de disiplinler kendi 3D modellerini üretir ama bu modeller ayrı ayrı yönetilir, ortak bir koordinasyon platformu yoktur. Seviye 2'de disiplinler kendi modellerini ayrı dosyalarda tutmaya devam eder ama ortak bir koordinat sistemi ve dosya değişim formatı (IFC gibi) üzerinden federe model oluşturulur — Türkiye'deki çoğu büyük proje bu seviyede yürütülüyor. Seviye 3 ise tüm disiplinlerin tek bir bulut tabanlı ortak veri ortamında (CDE) gerçek zamanlı çalıştığı, henüz ülkemizde yaygınlaşmamış ileri bir aşamadır.
+
+Sahada gördüğüm kadarıyla, bir projenin hangi seviyede yürütüleceği genellikle işveren ya da yatırımcının BIM olgunluğuna bağlı. Yatırımcı BIM konusunda deneyimliyse, sözleşme aşamasında BEP (BIM Uygulama Planı) talep ediyor ve seviye 2 koordinasyon standart hale geliyor. Deneyimsiz yatırımcılarda ise BIM genellikle sadece görselleştirme amacıyla, yüzeysel bir seviyede kalıyor.
+
+## Hangi Sektörlerde BIM Kullanılıyor?
+
+BIM sadece bina projelerine özgü değil; altyapı, endüstriyel tesis, enerji santrali gibi birçok yapı türünde de kullanılıyor. Konut ve ticari projelerde en çok mimari-mekanik-elektrik koordinasyonu öne çıkarken, endüstriyel tesislerde proses ekipmanlarının boru hatlarıyla entegrasyonu kritik önem taşıyor. Hastane gibi teknik olarak yoğun yapılarda ise mekanik tesisatın karmaşıklığı diğer bina tiplerine göre çok daha fazla, bu yüzden BIM koordinasyonu neredeyse zorunluluk haline geliyor.
+
 ## Pratik Öneriler
 
 BIM'e yeni başlayacak ya da sürecini olgunlaştırmak isteyen ekipler için sahadan edindiğim birkaç öneri:

@@ -49,6 +49,16 @@ Modelleme bittikten sonra mutlaka bir çakışma kontrolü (clash detection) sü
 
 Revit MEP'te model tamamlandıktan sonra, kesitler, planlar ve izometrik görünümler saha ekiplerinin işi anlaması için kritik önem taşıyor. Görünüm şablonlarını (view templates) sistem bazında ayarlamak, her disiplinin kendi ilgilendiği sistemi net görmesini sağlıyor. Ayrıca etiketleme (tagging) ve programlama (scheduling) özellikleriyle, model üzerinden otomatik malzeme listeleri türetilebiliyor.
 
+## Modelleme Standartları ve Ekip Uyumu
+
+Birden fazla kişinin aynı proje üzerinde çalıştığı durumlarda, modelleme standartlarının baştan yazılı hale getirilmesi büyük fark yaratıyor. Katman isimlendirmesi, worksets kullanımı, aile kütüphanesi organizasyonu gibi konularda ortak bir standart olmazsa, farklı mühendislerin modellediği bölümler arasında tutarsızlıklar ortaya çıkıyor. Sahada gördüğüm kadarıyla, özellikle worksets yapısının doğru kurgulanmaması, büyük projelerde model performansını ciddi şekilde düşürebiliyor ve senkronizasyon sırasında dosya kilitlenmelerine yol açabiliyor.
+
+Kendi ekiplerimde çalışırken, proje başında kısa bir "modelleme rehberi" hazırlıyorum: hangi sistem tipi hangi renkte gösterilecek, aile parametreleri nasıl isimlendirilecek, paylaşılan parametreler (shared parameters) nereden yönetilecek gibi konular bu rehberde netleşiyor. Bu küçük yatırım, proje ilerledikçe onlarca saatlik düzeltme işini önlüyor.
+
+## Worksharing ve Büyük Proje Yönetimi
+
+Büyük ölçekli projelerde tek bir Revit dosyası üzerinde birden fazla mühendisin aynı anda çalışması gerekiyor. Bu durumda worksharing (paylaşılan çalışma) özelliğinin doğru yapılandırılması kritik önem taşıyor. Worksets'lerin sisteme göre mi yoksa kat/bölgeye göre mi ayrılacağı, projenin büyüklüğüne ve ekip yapısına göre değişiyor. Deneyimlerimde, orta ölçekli projelerde sistem bazlı worksets (ısıtma, soğutma, sıhhi tesisat gibi) daha yönetilebilir sonuç verirken, çok katlı büyük projelerde kat bazlı ayrım senkronizasyon sürelerini kısaltıyor.
+
 ## Pratik Öneriler
 
 Revit MEP ile mekanik tesisat modellemesi yaparken sahadan edindiğim önerileri özetlemek gerekirse:
