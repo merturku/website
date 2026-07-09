@@ -12,15 +12,18 @@ const items = crosslinks.items || [];
         </h2>
       )}
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        {items.map((item: any) => (
-          <a href={item.url} class="card-glow bg-surface-raised rounded-[8px] p-6 flex items-center justify-between no-underline group">
-            <div>
-              <p class="font-display text-[19px] font-bold text-ink m-0 mb-1">{item.label}</p>
-              {item.description && <p class="text-[14px] text-ink-secondary m-0">{item.description}</p>}
-            </div>
-            <span class="text-accent text-[20px] transition-transform group-hover:translate-x-1">&rarr;</span>
-          </a>
-        ))}
+        {items.map((item: any) => {
+          const color = item.colorLight && item.colorDark ? `light-dark(${item.colorLight}, ${item.colorDark})` : undefined;
+          return (
+            <a href={item.url} class="card-glow bg-surface-raised rounded-[8px] p-6 flex items-center justify-between no-underline group border-l-4" style={color ? `border-left-color: ${color};` : ''}>
+              <div>
+                <p class="font-display text-[19px] font-bold text-ink m-0 mb-1">{item.label}</p>
+                {item.description && <p class="text-[14px] text-ink-secondary m-0">{item.description}</p>}
+              </div>
+              <span class="text-[20px] transition-transform group-hover:translate-x-1" style={color ? `color: ${color};` : ''}>&rarr;</span>
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
