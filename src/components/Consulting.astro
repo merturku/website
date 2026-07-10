@@ -10,7 +10,10 @@ const linkedin = (site.social || []).find((s: any) => s.label === 'LinkedIn');
       <div class="reveal bg-[#14171F] text-white rounded-[16px] p-8 md:p-14">
         {consulting.eyebrow && (
           <p class="inline-flex items-center gap-2 text-[13px] font-mono tracking-[0.12em] uppercase text-white/60 mb-5">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent-light inline-block"></span>
+            <span class="relative inline-flex w-1.5 h-1.5">
+              <span class="absolute inline-flex h-full w-full rounded-full bg-[#34C759] opacity-75 animate-ping"></span>
+              <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#34C759]"></span>
+            </span>
             {consulting.eyebrow}
           </p>
         )}
