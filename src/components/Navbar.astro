@@ -6,7 +6,7 @@ const navItems = site.nav || [];
 ---
 <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
   <div class="max-w-[1200px] mx-auto px-6 h-[64px] flex items-center justify-between">
-    <a href={base} class="font-display text-[18px] font-bold text-ink no-underline hover:text-accent transition-colors tracking-[-0.01em]">
+    <a href={site.homeUrl || base} class="font-display text-[18px] font-bold text-ink no-underline hover:text-accent transition-colors tracking-[-0.01em]">
       {site.name || ''}
     </a>
 

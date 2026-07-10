@@ -6,6 +6,7 @@ lang: "tr"
 ogImage: "/og.png"
 themeColor: "#C2660D"
 introText: "BIM"
+homeUrl: "https://merturkucom.vercel.app"
 
 theme:
   light:

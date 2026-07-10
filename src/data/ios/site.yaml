@@ -4,20 +4,21 @@ name: "Mehmet Ertürk Uludaşdemir"
 email: "erturkuludasdemir@gmail.com"
 lang: "tr"
 ogImage: "/og.png"
-themeColor: "#5E5CE6"
+themeColor: "#34C759"
 introText: "iOS"
+homeUrl: "https://merturkucom.vercel.app"
 
 theme:
   light:
-    accent: "#5E5CE6"
-    accentLight: "#8482ED"
-    accentDark: "#4240B8"
-    accentWash: "#EEEDFC"
+    accent: "#34C759"
+    accentLight: "#5DD87D"
+    accentDark: "#248A3D"
+    accentWash: "#E8F8EC"
   dark:
-    accent: "#9D9BFF"
-    accentLight: "#B5B3FF"
-    accentDark: "#7A78E6"
-    accentWash: "rgba(157, 155, 255, 0.1)"
+    accent: "#30D158"
+    accentLight: "#6EE68C"
+    accentDark: "#248A3D"
+    accentWash: "rgba(48, 209, 88, 0.1)"
 
 social:
   - label: "GitHub"
