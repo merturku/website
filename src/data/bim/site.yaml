@@ -7,6 +7,7 @@ ogImage: "/og.png"
 themeColor: "#C2660D"
 introText: "BIM"
 homeUrl: "https://merturkucom.vercel.app"
+favicon: "favicon-bim.svg"
 
 theme:
   light:

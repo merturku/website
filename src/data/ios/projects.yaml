@@ -18,7 +18,7 @@ items:
     status: "Yayında"
     featured: true
     links:
-      - url: "https://apps.apple.com"
+      - url: "https://apps.apple.com/tr/app/lilio/id6755626446?l=tr"
         icon: "tvzjrcxe"
         label: "App Store"
     tech:
@@ -35,7 +35,7 @@ items:
     status: "Yayında"
     featured: true
     links:
-      - url: "https://apps.apple.com"
+      - url: "https://apps.apple.com/tr/app/privgeo/id6759321239?l=tr"
         icon: "tvzjrcxe"
         label: "App Store"
     tech:
@@ -52,7 +52,7 @@ items:
     status: "Yayında"
     featured: true
     links:
-      - url: "https://apps.apple.com"
+      - url: "https://apps.apple.com/tr/app/babynamer/id6758357141?l=tr"
         icon: "tvzjrcxe"
         label: "App Store"
     tech:
