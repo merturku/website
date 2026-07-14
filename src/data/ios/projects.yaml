@@ -12,11 +12,18 @@ statuses:
 
 items:
   - title: "Lilio"
+    slug: "lilio"
     subtitle: "Bebek takip uygulaması"
     description: "Ebeveynler için tasarlanmış kapsamlı bebek takip uygulaması. Beslenme, uyku, bez ve büyüme takibi. Tam Türkçe ve İngilizce desteği ile iOS 17+ için SwiftUI ile geliştirildi."
     icon: "lvrxlmju"
     status: "Yayında"
     featured: true
+    features:
+      - "Beslenme takibi (emzirme, biberon, katı gıda)"
+      - "Uyku takibi ve süre analizi"
+      - "Bez değişimi kayıtları"
+      - "Büyüme takibi (boy, kilo, baş çevresi)"
+      - "Tam Türkçe ve İngilizce dil desteği"
     links:
       - url: "https://apps.apple.com/tr/app/lilio/id6755626446?l=tr"
         icon: "tvzjrcxe"
@@ -29,11 +36,17 @@ items:
       - StoreKit 2
 
   - title: "PrivGeo"
+    slug: "privgeo"
     subtitle: "Aile konum takip uygulaması"
     description: "Ebeveynlerin çocuklarını ve aile üyelerini gizlilik odaklı bir şekilde takip etmesini sağlayan konum takip uygulaması. Gerçek zamanlı konum paylaşımı ve güvenli bölge bildirimleri."
     icon: "exymduqj"
     status: "Yayında"
     featured: true
+    features:
+      - "Gerçek zamanlı konum paylaşımı"
+      - "Güvenli bölge (geofence) bildirimleri"
+      - "Gizlilik odaklı veri yönetimi"
+      - "Harita üzerinde aile üyesi takibi"
     links:
       - url: "https://apps.apple.com/tr/app/privgeo/id6759321239?l=tr"
         icon: "tvzjrcxe"
@@ -46,11 +59,16 @@ items:
       - StoreKit 2
 
   - title: "BabyNamer"
+    slug: "babynamer"
     subtitle: "İsim bulma uygulaması"
     description: "Ebeveynlerin bebeklerine isim bulmasına yardımcı olan uygulama. Kültürel ve anlamsal filtreleme özellikleri ile Türkçe isim veritabanı."
     icon: "fikcyfpp"
     status: "Yayında"
     featured: true
+    features:
+      - "Kapsamlı Türkçe isim veritabanı"
+      - "Kültürel ve anlamsal filtreleme"
+      - "Favori isimleri kaydetme"
     links:
       - url: "https://apps.apple.com/tr/app/babynamer/id6758357141?l=tr"
         icon: "tvzjrcxe"
@@ -61,11 +79,16 @@ items:
       - iOS 17+
 
   - title: "SunCalc"
+    slug: "suncalc"
     subtitle: "Güneş takip ve AR uygulaması"
     description: "Uydu harita görselleştirmesi, AR modu ve astronomik hesaplamalar içeren güneş takip uygulaması. Türk pazarı için özel olarak tasarlandı."
     icon: "wsaaegar"
     status: "Geliştiriliyor"
     featured: false
+    features:
+      - "Uydu harita görselleştirmesi"
+      - "AR modu ile gerçek zamanlı güneş konumu"
+      - "Astronomik hesaplamalar"
     links:
       - url: "https://github.com/merturku"
         icon: "jjxzcivr"

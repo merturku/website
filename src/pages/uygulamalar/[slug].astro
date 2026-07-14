@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { load, LI, liSrc } from '../../lib/data';
+
+export function getStaticPaths() {
+  const projects = load('projects.yaml');
+  const items = (projects.items || []).filter((p: any) => p.slug);
+  return items.map((project: any) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const primaryUrl = project.links?.[0]?.url;
+const primaryLabel = project.links?.[0]?.label || 'Görüntüle';
+---
+
+<BaseLayout title={`${project.title} — Uygulamalarım`} description={project.description}>
+  <Navbar />
+
+  <main class="max-w-[820px] mx-auto px-6 py-24">
+    <a href="/#projects" class="text-[13px] font-mono text-ink-tertiary hover:text-accent transition-colors mb-10 block">
+      ← Uygulamalarıma dön
+    </a>
+
+    <div class="flex items-start gap-5 mb-6">
+      <div class="w-16 h-16 rounded-[16px] bg-accent-wash flex items-center justify-center shrink-0">
+        <lord-icon src={liSrc(project.icon || 'gsjfryhc')} trigger="morph" colors={LI.dark} class="li-2xl"></lord-icon>
+      </div>
+      <div>
+        <div class="flex items-center gap-2 flex-wrap">
+          <h1 class="font-display text-[32px] md:text-[40px] font-bold text-ink m-0">{project.title}</h1>
+          {project.status && <span class="inline-block px-2.5 py-1 text-[11px] font-medium rounded font-mono uppercase bg-accent-wash text-accent">{project.status}</span>}
+        </div>
+        {project.subtitle && <p class="text-[16px] md:text-[18px] text-accent font-medium mt-1 mb-0">{project.subtitle}</p>}
+      </div>
+    </div>
+
+    <p class="text-[17px] text-ink-secondary leading-[1.75] mb-8">{project.description}</p>
+
+    {project.features?.length > 0 && (
+      <div class="mb-8">
+        <h2 class="font-display text-[20px] font-bold text-ink mb-4">Öne Çıkan Özellikler</h2>
+        <ul class="list-none p-0 m-0 space-y-2.5">
+          {project.features.map((f: string) => (
+            <li class="flex items-start gap-2.5 text-[16px] text-ink-secondary leading-[1.6]">
+              <span class="text-accent mt-0.5">✓</span>
+              <span>{f}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    {project.tech?.length > 0 && (
+      <div class="mb-10">
+        <h2 class="font-display text-[20px] font-bold text-ink mb-4">Kullanılan Teknolojiler</h2>
+        <div class="flex flex-wrap gap-2">
+          {project.tech.map((t: string) => (
+            <span class="inline-block px-3 py-1.5 text-[14px] font-medium rounded bg-accent-wash text-accent font-mono">{t}</span>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {primaryUrl && (
+      <a href={primaryUrl} target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-ink-on-dark text-[16px] font-medium rounded-[6px] hover:bg-accent-light transition-all no-underline">
+        {primaryLabel}'da Gör
+      </a>
+    )}
+  </main>
+
+  <Footer />
+</BaseLayout>
