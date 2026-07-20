@@ -6,7 +6,7 @@ lang: "tr"
 ogImage: "/og.png"
 themeColor: "#34C759"
 introText: "iOS"
-homeUrl: "https://merturkucom.vercel.app"
+homeUrl: "https://merturku.com"
 favicon: "favicon-ios.svg"
 
 theme:
