@@ -37,3 +37,30 @@ items:
     links:
       - url: "http://dutesyapi.com.tr"
         label: "Siteyi Gör"
+
+  - title: "CVS Teknik"
+    subtitle: "İSG malzemeleri tedarik firması"
+    description: "Eldiven, iş ayakkabısı ve iş kıyafeti gibi kişisel koruyucu donanım (KKD) ürünlerinin tedarikini yapan firma için kurumsal web sitesi. Ürün kategorileri ve iletişim akışıyla sahaya hızlı tedarik odaklı bir sunum."
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://www.cvsteknik.com"
+        label: "Siteyi Gör"
+
+  - title: "Gosiva"
+    subtitle: "Organik kaz çiftliği"
+    description: "Bilecik'te 180 dönümlük arazide organik kaz yetiştiriciliği yapan çiftlik için kurumsal web sitesi. Döllenmiş yumurta, civciv ve damızlık kaz satışının yanı sıra kaz eti, ciğeri, yağı ve tüyü gibi ürün yelpazesini tanıtan bir sunum."
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://www.gosiva.com.tr"
+        label: "Siteyi Gör"
+
+  - title: "Dikili Çiftlik"
+    subtitle: "Tarım ve gıda üretimi"
+    description: "İzmir'de 2005'ten bu yana kırmızı et, Amphora markalı sızma zeytinyağı ve doku kültürüyle fidan üretimi yapan şirket için kurumsal web sitesi. İzlenebilirlik ve kalite vurgusuyla üç iş kolunu tek çatıda tanıtan bir sunum."
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://www.dikiliciftlik.com.tr"
+        label: "Siteyi Gör"
