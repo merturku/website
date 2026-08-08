@@ -10,3 +10,8 @@ items:
     url: "https://bim.merturku.com"
     colorLight: "#C2660D"
     colorDark: "#E3944B"
+  - label: "Web Sitesi Geliştirme"
+    description: "İşletmeler ve girişimciler için hızlı, modern web siteleri"
+    url: "#contact"
+    colorLight: "#2E5090"
+    colorDark: "#7BA4E0"

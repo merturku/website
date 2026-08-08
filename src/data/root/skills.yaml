@@ -1,4 +1,13 @@
 label: "04 // BECERİLER"
 heading: "Teknoloji Yığını"
 
-categories: []
+categories:
+  - name: "Web Geliştirme"
+    icon: "xqdfobxg"
+    items:
+      - Astro
+      - Tailwind CSS
+      - TypeScript
+      - YAML
+      - HTML
+      - CSS

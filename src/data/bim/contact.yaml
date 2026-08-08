@@ -4,6 +4,4 @@ description: "BIM danışmanlığı, şantiye yönetimi veya dijital dönüşüm
 emailIcon: "ozlkyfxg"
 
 footer:
-  copyright: '2026 Mehmet Ertürk Uludaşdemir. <a href="https://astro.build" target="_blank" rel="noopener" class="text-ink-tertiary hover:text-accent transition-colors no-underline dark:text-ink-tertiary">Astro</a> ile geliştirildi.'
-  iconsAttribution: "Lordicon"
-  iconsUrl: "https://lordicon.com/"
+  copyright: '2026 Mehmet Ertürk Uludaşdemir.'

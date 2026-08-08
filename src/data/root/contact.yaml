@@ -1,9 +1,7 @@
 label: "02 // İLETİŞİM"
 heading: "Birlikte bir şeyler üretelim."
-description: "iOS geliştirme veya BIM danışmanlığı hakkında konuşmaya her zaman açığım."
+description: "iOS geliştirme, BIM danışmanlığı veya web sitesi projeleri hakkında konuşmaya her zaman açığım."
 emailIcon: "ozlkyfxg"
 
 footer:
-  copyright: '2026 Mehmet Ertürk Uludaşdemir. <a href="https://astro.build" target="_blank" rel="noopener" class="text-ink-tertiary hover:text-accent transition-colors no-underline dark:text-ink-tertiary">Astro</a> ile geliştirildi.'
-  iconsAttribution: "Lordicon"
-  iconsUrl: "https://lordicon.com/"
+  copyright: '2026 Mehmet Ertürk Uludaşdemir.'

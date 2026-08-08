@@ -2,9 +2,9 @@ label: "01 // HAKKIMDA"
 heading: "İnşaat ve yazılım dünyasını birleştiriyorum"
 
 paragraphs:
-  - '<strong class="text-ink">Ankara</strong> merkezli, iki farklı uzmanlık alanında çalışıyorum: 2015''ten bu yana BIM Uzmanı ve Şantiye Yöneticisi olarak büyük ölçekli inşaat projelerinde Revit MEP koordinasyonu yürütüyorum; 2023''ten itibaren de SwiftUI ile App Store''da yayınlanan iOS uygulamaları geliştiriyorum.'
-  - 'Bu iki alan birbirini besliyor: şantiyede edindiğim sistemli, süreç odaklı disiplin yazılım mimarisine; yazılımdaki hızlı yineleme alışkanlığım da BIM süreçlerindeki dijital dönüşüm çalışmalarına yansıyor.'
-  - 'Detaylı proje, deneyim ve çalışmalarımı görmek için ilgilendiğin uzmanlık alanına özel siteme göz atabilirsin — aşağıda ikisine de ulaşabilirsin.'
+  - '<strong class="text-ink">Ankara</strong> merkezli, üç farklı uzmanlık alanında çalışıyorum: 2015''ten bu yana BIM Uzmanı ve Şantiye Yöneticisi olarak büyük ölçekli inşaat projelerinde Revit MEP koordinasyonu yürütüyorum; 2023''ten itibaren de SwiftUI ile App Store''da yayınlanan iOS uygulamaları ve Astro/Tailwind ile küçük işletmeler için hızlı, modern web siteleri geliştiriyorum.'
+  - 'Bu alanlar birbirini besliyor: şantiyede edindiğim sistemli, süreç odaklı disiplin yazılım mimarisine; yazılımdaki hızlı yineleme alışkanlığım da BIM süreçlerindeki dijital dönüşüm çalışmalarına yansıyor.'
+  - 'Detaylı proje, deneyim ve çalışmalarımı görmek için ilgilendiğin uzmanlık alanına özel siteme göz atabilirsin — aşağıda üçüne de ulaşabilirsin.'
 
 stats:
   - value: "10+"
@@ -16,3 +16,6 @@ stats:
   - value: "BIM"
     label: "İnşaat Koordinasyonu"
     icon: "yvjimpju"
+  - value: "Web"
+    label: "Site Geliştirme"
+    icon: "xqdfobxg"
