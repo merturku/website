@@ -1,39 +1,4 @@
 label: "03 // PROJELER"
 heading: "Projelerim"
 
-items:
-  - title: "3E Mühendislik"
-    subtitle: "Mekanik tesisat & mühendislik firması"
-    description: "HVAC, yangın tesisatı, sıhhi tesisat ve süreç boru hattı hizmetleri sunan mühendislik firması için kurumsal web sitesi. Hizmet detayları, referans projeler ve iletişim akışıyla müşteri odaklı bir sunum."
-    status: "Yayında"
-    featured: true
-    links:
-      - url: "https://ucemuhendislik.com"
-        label: "Siteyi Gör"
-
-  - title: "AD Mekanik"
-    subtitle: "Profesyonel mekanik tesisat hizmetleri"
-    description: "HVAC, VRF/VRV iklimlendirme, yangın ve sıhhi tesisat hizmetleri sunan mekanik tesisat firması için kurumsal web sitesi. Proje galerisi, referanslar ve teklif talep akışı içeriyor."
-    status: "Yayında"
-    featured: true
-    links:
-      - url: "https://admekanik.com.tr"
-        label: "Siteyi Gör"
-
-  - title: "ÇF İnşaat"
-    subtitle: "İnşaat ve mekanik sistemler"
-    description: "Endüstriyel yapılar, AVM, eğitim ve sağlık tesisleri gibi büyük ölçekli projeler yürüten inşaat firması için kurumsal web sitesi. Tamamlanan proje galerisi ve hizmet tanıtımlarıyla kurumsal kimliği güçlendiriyor."
-    status: "Yayında"
-    featured: true
-    links:
-      - url: "https://cfinsaat.com.tr"
-        label: "Siteyi Gör"
-
-  - title: "Dutes Yapı"
-    subtitle: "Mekanik tesisat hizmetleri"
-    description: "Mekanik tesisat alanında hizmet veren firma için kurumsal web sitesi."
-    status: "Yayında"
-    featured: true
-    links:
-      - url: "http://dutesyapi.com.tr"
-        label: "Siteyi Gör"
+items: []
