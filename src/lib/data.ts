@@ -5,7 +5,7 @@ import path from 'node:path';
 export const variant = process.env.SITE_VARIANT || 'ios';
 const dataDir = path.join(process.cwd(), 'src/data', variant);
 // Root site mirrors the iOS content variant, including which blog posts it shows.
-export const blogCategory = variant === 'bim' ? 'bim' : 'ios';
+export const blogCategory = variant === 'bim' ? 'bim' : variant === 'web' ? 'web' : 'ios';
 
 export function load(file: string): any {
   const filePath = path.join(dataDir, file);

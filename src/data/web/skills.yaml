@@ -1,0 +1,21 @@
+label: "04 // BECERİLER"
+heading: "Teknoloji Yığını"
+
+categories:
+  - name: "Web Geliştirme"
+    icon: "xqdfobxg"
+    items:
+      - Astro
+      - Tailwind CSS
+      - TypeScript
+      - YAML
+      - HTML
+      - CSS
+
+  - name: "Araçlar & Platform"
+    icon: "gvtjlyjf"
+    items:
+      - Git
+      - GitHub
+      - Vercel
+      - Figma

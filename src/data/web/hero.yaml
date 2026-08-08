@@ -1,0 +1,17 @@
+subtitle: "WEB SİTESİ GELİŞTİRİCİ"
+name: "MEHMET ERTÜRK"
+icon: "srupsmbe"
+description: "Küçük işletmeler ve girişimciler için Astro ve Tailwind CSS ile hızlı, modern, SEO uyumlu web siteleri tasarlıyor ve geliştiriyorum."
+
+cta:
+  viewWork:
+    label: "Projelerimi Gör"
+    href: "#projects"
+    icon: "zhiiqoue"
+  getInTouch:
+    label: "İletişime Geç"
+    href: "#contact"
+    icon: "vcdutftw"
+  downloadCV:
+    label: "CV"
+    href: "/cv"

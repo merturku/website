@@ -1,0 +1,11 @@
+label: "05 // EĞİTİM"
+heading: "Akademik Geçmiş"
+
+degree: "Bilgisayar Mühendisliği"
+institution: "Üniversite"
+dateRange: "2010 &ndash; 2015"
+
+highlights:
+  - text: "Web Geliştirme"
+    icon: "zpxybbhl"
+    featured: true
