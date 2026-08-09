@@ -56,6 +56,15 @@ items:
       - url: "https://www.gosiva.com.tr"
         label: "Siteyi Gör"
 
+  - title: "Progress Mühendislik"
+    subtitle: "Isıtma, soğutma ve doğalgaz mühendislik firması"
+    description: "Radyant ısıtma, doğalgaz/LPG tesisatı, endüstriyel HVAC ve yangın tesisatı hizmetleri sunan mühendislik firması için kurumsal web sitesi. Ürün kataloğu, 250'den fazla tamamlanmış proje referansı ve iletişim akışıyla kurumsal kimliği güçlendiriyor."
+    status: "Yayında"
+    featured: true
+    links:
+      - url: "https://progressmuhendislik.com.tr"
+        label: "Siteyi Gör"
+
   - title: "Dikili Çiftlik"
     subtitle: "Tarım ve gıda üretimi"
     description: "İzmir'de 2005'ten bu yana kırmızı et, Amphora markalı sızma zeytinyağı ve doku kültürüyle fidan üretimi yapan şirket için kurumsal web sitesi. İzlenebilirlik ve kalite vurgusuyla üç iş kolunu tek çatıda tanıtan bir sunum."

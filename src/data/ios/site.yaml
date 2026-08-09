@@ -29,6 +29,9 @@ social:
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/mehmet-ertürk-uludaşdemir/"
     icon: "euybrknk"
+  - label: "Instagram"
+    url: "https://www.instagram.com/merturku.ios/"
+    icon: "instagram"
 
 nav:
   - label: "Hakkımda"
