@@ -1,8 +1,8 @@
 label: "01 // HAKKIMDA"
-heading: "Astro ve Tailwind ile modern web siteleri geliştiriyorum"
+heading: "Modern web teknolojileriyle hızlı web siteleri geliştiriyorum"
 
 paragraphs:
-  - 'Web Sitesi Geliştirici olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. Küçük işletmeler ve girişimciler için Astro, Tailwind CSS ve TypeScript kullanarak hızlı, modern ve SEO uyumlu web siteleri tasarlıyor ve geliştiriyorum.'
+  - 'Web Sitesi Geliştirici olarak <strong class="text-ink">Ankara</strong> merkezli çalışıyorum. Küçük işletmeler ve girişimciler için modern web teknolojileri kullanarak hızlı, modern ve SEO uyumlu web siteleri tasarlıyor ve geliştiriyorum.'
   - 'İnşaat sektöründeki BIM koordinasyon deneyimim bana süreç odaklı, detaycı bir çalışma disiplini kazandırdı — bunu web projelerinde temiz kod mimarisi ve zamanında teslimat olarak uyguluyorum.'
   - 'Bugüne kadar mekanik tesisat ve inşaat sektöründen firmalar için kurumsal web siteleri geliştirdim: <strong class="text-ink">3E Mühendislik</strong>, <strong class="text-ink">AD Mekanik</strong>, <strong class="text-ink">ÇF İnşaat</strong> ve <strong class="text-ink">Dutes Yapı</strong>.'
   - 'Web geliştirme çalışmalarımı ve deneyimlerimi ayrıca <a href="/blog" class="font-medium">blogumda</a> paylaşıyorum.'
@@ -11,8 +11,8 @@ stats:
   - value: "4+"
     label: "Tamamlanan Proje"
     icon: "kbtmbyzy"
-  - value: "Astro"
-    label: "Modern Teknoloji"
+  - value: "Modern"
+    label: "Web Teknolojileri"
     icon: "vbmtnozn"
   - value: "%100"
     label: "Mobil Uyumlu"

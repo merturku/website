@@ -6,7 +6,7 @@ jobs:
     role: "Web Sitesi Geliştirici"
     location: "Ankara, Türkiye"
     dateRange: "2025 &ndash; Devam ediyor"
-    description: "Küçük işletmeler ve girişimciler için Astro ve Tailwind CSS ile kurumsal web siteleri tasarlayıp geliştiriyorum. Mekanik tesisat ve inşaat sektöründen firmalara (3E Mühendislik, AD Mekanik, ÇF İnşaat, Dutes Yapı) hızlı, modern ve SEO uyumlu siteler teslim ettim."
+    description: "Küçük işletmeler ve girişimciler için modern web teknolojileriyle kurumsal web siteleri tasarlayıp geliştiriyorum. Mekanik tesisat ve inşaat sektöründen firmalara (3E Mühendislik, AD Mekanik, ÇF İnşaat, Dutes Yapı, Progress Mühendislik) hızlı, modern ve SEO uyumlu siteler teslim ettim."
     tech:
       - Astro
       - Tailwind CSS
