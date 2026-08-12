@@ -9,6 +9,7 @@ import Projects from '../components/Projects.astro';
 import Skills from '../components/Skills.astro';
 import Education from '../components/Education.astro';
 import CrossLinks from '../components/CrossLinks.astro';
+import Testimonials from '../components/Testimonials.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import { load } from '../lib/data';
@@ -22,6 +23,7 @@ const projects = load('projects.yaml');
 const skills = load('skills.yaml');
 const education = load('education.yaml');
 const crosslinks = load('crosslinks.yaml');
+const testimonials = load('testimonials.yaml');
 const contact = load('contact.yaml');
 ---
 <BaseLayout title={site.title || 'Portfolio'} description={site.description || ''}>
@@ -34,6 +36,7 @@ const contact = load('contact.yaml');
   {(skills.categories?.length ?? 0) > 0 && <Skills />}
   {(education.degree || (education.highlights?.length ?? 0) > 0) && <Education />}
   {(crosslinks.items?.length ?? 0) > 0 && <CrossLinks />}
+  {(testimonials.items?.length ?? 0) > 0 && <Testimonials />}
   {(contact.heading || site.email) && <Contact />}
   <Footer />
 </BaseLayout>
